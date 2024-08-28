@@ -8,6 +8,7 @@ export default {
     extend: {
         fontFamily: {
             arcade: ["Arcade", "sans-serif"],
+            fairydust: ["FairydustB", "sans-serif"]
           },
     },
   },

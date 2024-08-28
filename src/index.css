@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Arcade";
-    src: url("/assets/fonts/Arcade/ka1.ttf") format("truetype");
-  }
+  font-family: "Arcade";
+  src: url("/assets/fonts/Arcade/ka1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FairydustB";
+  src: url("/assets/fonts/FairydustB/FairydustB.ttf") format("truetype");
+}
