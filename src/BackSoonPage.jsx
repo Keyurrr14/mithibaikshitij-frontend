@@ -1,5 +1,5 @@
 import React from "react";
-import Dino from "./assets/dino.gif";
+import Dino from "./assets/images/dino.gif";
 
 function BackSoonPage() {
   return (
