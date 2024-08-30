@@ -2,9 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/KshitijWhite.webp" />
+    <link
+      rel="icon"
+      id="favicon"
+      href="/assets/images/KshitijWhite.webp"
+    />
+    <link
+      rel="apple"
+      id="apple-touch"
+      href="/assets/images/KshitijWhite.webp"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const usesDarkMode =
+          window.matchMedia("(prefers-color-scheme: dark)").matches || false;
+        const favicon = document.getElementById("favicon");
+        const apple = document.getElementById("apple-touch");
+
+        function switchIcon(usesDarkMode) {
+          if (usesDarkMode) {
+            favicon.href = "/assets/images/KshitijWhite.webp";
+            apple.href = "/assets/images/KshitijWhite.webp";
+          } else {
+            favicon.href = "/assets/images/KshitijBlack.webp";
+            apple.href = "/assets/images/KshitijBlack.webp";
+          }
+        }
+
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", (e) => switchIcon(e.matches));
+        
+        switchIcon(usesDarkMode);
+      });
+    </script>
+
+    <meta property="og:site_name" content="Mithibai Kshitij" />
+    <meta
+      property="og:description"
+      content="SVKM’s Mithibai College’s Annual Intercollegiate Asia’s Fastest Growing Cultural College Festival"
+    />
+    <meta
+      name="keywords"
+      content="mithibai kshitij, mithibai cultural committee, mcc, mithibai college, mithibai, kshitij, mithibai college kshitij, kshitij fest, college fest, college festival, events, registrations, pronites, "
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="SVKM’s Mithibai College’s Annual Intercollegiate Asia’s Fastest Growing Cultural College Festival"
+    />
     <title>Mithibai Kshitij</title>
+    <meta property="og:title" content="Mithibai Kshitij" />
   </head>
   <body>
     <div id="root"></div>

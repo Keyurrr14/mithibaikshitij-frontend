@@ -12,12 +12,12 @@ function BackSoonPage() {
             className="h-20 sm:h-24 md:h-28 lg:h-32 xl:h-36"
             alt=""
           />
-          <h1 className="sm:text-5xl text-3xl font-arcade ">
+          <h1 className="sm:text-5xl text-2xl font-arcade ">
             Mithibai Kshitij
           </h1>
         </div>
         <img className="max-w-screen" src={Dino} alt="" />
-        <h1 className="sm:text-4xl text-sm font-arcade ">coming soon...</h1>
+        <h1 className="sm:text-4xl text-md font-arcade ">coming soon...</h1>
       </div>
     </>
   );
