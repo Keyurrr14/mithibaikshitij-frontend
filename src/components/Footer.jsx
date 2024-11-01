@@ -4,7 +4,7 @@ import { footerLinksRight } from "../../utils/data";
 const Footer = () => {
   return (
     <footer
-      className="font-manrope font-semibold"
+      className="font-lusitana font-bold"
       style={{ padding: "5rem", paddingBottom: "2rem" }}
     >
       <div className="flex justify-between">

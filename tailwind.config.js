@@ -15,7 +15,9 @@ export default {
         arcade: ["Arcade", "sans-serif"],
         fairydust: ["FairydustB", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
+        milker: ["Milker", "sans-serif"],
+        lusitana: ["Lusitana", "sans-serif"],
+        rubik: ["Rubik", "sans-serif"],
       },
       colors: {
         "primary-500": "#877EFF",
