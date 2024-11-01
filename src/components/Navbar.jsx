@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import Kshitij from "/assets/images/KshitijWhite.webp";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,22 +27,22 @@ function Navbar() {
           >
             <ul className="flex lg:flex-row flex-col lg:items-center items-center lg:gap-10 gap-8 font-semibold">
               <li>
-                <a href="">Home</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a href="">About Us</a>
+                <NavLink to="/about">About Us</NavLink>
               </li>
               <li>
-                <a href="">Gallery</a>
+                <NavLink to="/gallery">Gallery</NavLink>
               </li>
               <li>
-                <a href="">Core Committee</a>
+                <NavLink to="/core-committee">Core Committee</NavLink>
               </li>
               <li>
-                <a href="">Contact Us</a>
+                <NavLink to="/contact">Contact Us</NavLink>
               </li>
               <li>
-                <a href="">Register</a>
+                <NavLink to="/register">Register</NavLink>
               </li>
             </ul>
           </div>
