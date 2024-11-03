@@ -1,5 +1,8 @@
 import {TextGenerateEffect} from "@/components/ui/text-generate"
 import TextField from "@/components/ui/TextField"
+import Contacts from "@/components/contacts"
+import MapComponent from "@/components/MapComponent"
+
 const ContactPage = () => {
   return (
       <div className='w-full h-full flex flex-col justify-center bg-main-gradient gap-4'>
@@ -33,11 +36,9 @@ const ContactPage = () => {
         </div>
         </div>
 
+        <MapComponent />
 
-
-        <div className="w-full h-full flex justify-center items-center">
-
-        </div>
+        <Contacts />
 
 
 
