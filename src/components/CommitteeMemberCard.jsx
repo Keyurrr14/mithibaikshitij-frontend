@@ -8,12 +8,12 @@ function CommitteeMemberCard({ designation, image, name, phone }) {
       </h1>
       <div className="h-60 w-48 sm:h-72 sm:w-56 md:h-80 md:w-64 bg-white rounded-3xl my-2">
         <img
-          className="w-full h-full object-cover rounded-3xl pt-6 sm:pt-8 md:pt-10"
+          className="w-full h-full object-cover rounded-3xl mx-auto"
           src={image}
           alt={name}
         />
       </div>
-      <h1 className="text-center text-lg sm:text-xl md:text-2xl font-milker tracking-wider text-white">
+      <h1 className="text-center text-lg sm:text-xl md:text-xl font-milker tracking-wider text-white">
         {name}
       </h1>
       <h1 className="text-center text-md sm:text-lg md:text-xl font-lusitana font-bold tracking-wider text-white">

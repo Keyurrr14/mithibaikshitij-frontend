@@ -3,6 +3,28 @@ import CommitteeMemberCard from "../components/CommitteeMemberCard";
 import Background from "/assets/images/background.png";
 import BhumiShah from "/assets/images/committee/BhumiShah.webp";
 import DhruvAgarwal from "/assets/images/committee/DhruvAgarwal.png";
+import GehnaTibb from "/assets/images/committee/GehnaTibb.webp";
+import RudraTrivedi from "/assets/images/committee/RudraTrivedi.webp";
+import KrishVora from "/assets/images/committee/KrishVora.webp";
+import DarshJain from "/assets/images/committee/DarshJain.webp";
+import MuditAggarwal from "/assets/images/committee/MuditAggarwal.webp";
+import RiddhiBheda from "/assets/images/committee/RiddhiBheda.webp";
+import SoumyaPattnaik from "/assets/images/committee/SoumyaPattnaik.webp";
+import UrjaSeth from "/assets/images/committee/UrjaSeth.webp";
+import PehuMakharia from "/assets/images/committee/PehuMakharia.webp";
+import MayankSavankar from "/assets/images/committee/MayankSavankar.webp";
+import DivyMehta from "/assets/images/committee/DivyMehta.webp";
+import SunidhiYadav from "/assets/images/committee/SunidhiYadav.webp";
+import RajGoradia from "/assets/images/committee/RajGoradia.webp";
+import HasnainAgharia from "/assets/images/committee/HasnainAgharia.webp";
+import MokshaThakkar from "/assets/images/committee/MokshaThakkar.webp";
+import PrathamMaru from "/assets/images/committee/PrathamMaru.webp";
+import ApoorviBhatiya from "/assets/images/committee/ApoorviBhatiya.webp";
+import FaruqDiddimani from "/assets/images/committee/FaruqDiddimani.webp";
+import NandiniVerat from "/assets/images/committee/NandiniVerat.webp";
+import SanskritiM from "/assets/images/committee/SanskritiM.webp";
+import LubhawaniSinghal from "/assets/images/committee/LubhawaniSinghal.webp";
+import RudrakshDave from "/assets/images/committee/RudrakshDave.webp";
 
 function CommitteePage() {
   return (
@@ -32,22 +54,22 @@ function CommitteePage() {
       <div className="flex flex-wrap justify-center gap-24 mt-20 w-[95%] mx-auto">
         <CommitteeMemberCard
           designation="Vice-Chairperson"
-          image={BhumiShah}
+          image={GehnaTibb}
           name="Gehna Tibb"
         />
         <CommitteeMemberCard
           designation="Vice-Chairperson"
-          image={BhumiShah}
+          image={RudraTrivedi}
           name="Rudra Trivedi"
         />
         <CommitteeMemberCard
           designation="Vice-Chairperson"
-          image={BhumiShah}
+          image={KrishVora}
           name="Krish Vora"
         />
         <CommitteeMemberCard
           designation="Vice-Chairperson"
-          image={BhumiShah}
+          image={DarshJain}
           name="Darsh Jain"
         />
       </div>
@@ -59,79 +81,79 @@ function CommitteePage() {
       <div className="flex flex-wrap justify-center gap-24 mt-20 w-[95%] mx-auto">
         <CommitteeMemberCard
           designation="Marketing"
-          image={BhumiShah}
+          image={HasnainAgharia}
           name="Hasnain Agharia"
           phone="9619074161"
         />
         <CommitteeMemberCard
           designation="Marketing"
-          image={BhumiShah}
+          image={ApoorviBhatiya}
           name="Apoorvi Bhatiya"
           phone="9826023903"
         />
         <CommitteeMemberCard
           designation="Marketing"
-          image={BhumiShah}
+          image={SoumyaPattnaik}
           name="Soumya Pattnaik"
           phone="8861849596"
         />
         <CommitteeMemberCard
           designation="Finance"
-          image={BhumiShah}
+          image={RajGoradia}
           name="Raj Goradia"
           phone="9820555132"
         />
         <CommitteeMemberCard
           designation="Artist Relations"
-          image={BhumiShah}
+          image={MayankSavankar}
           name="Mayank Savankar"
           phone="9923005261"
         />
         <CommitteeMemberCard
           designation="Artist Relations"
-          image={BhumiShah}
+          image={RiddhiBheda}
           name="Riddhi Bheda"
           phone="9167122116"
         />
         <CommitteeMemberCard
           designation="Digital Media"
-          image={BhumiShah}
+          image={PrathamMaru}
           name="Pratham Maru"
           phone="9820095729"
         />
         <CommitteeMemberCard
           designation="Artist Relations"
-          image={BhumiShah}
+          image={MokshaThakkar}
           name="Moksha Thakkar"
           phone="9869633123"
         />
         <CommitteeMemberCard
           designation="Graphics"
-          image={BhumiShah}
+          image={SunidhiYadav}
           name="Sunidhi Yadav"
           phone="8828065975"
         />
         <CommitteeMemberCard
           designation="Graphics"
-          image={BhumiShah}
+          image={PehuMakharia}
           name="Pehu Makharia"
           phone="9352141516"
         />
         <CommitteeMemberCard
           designation="Literary Arts"
-          image={BhumiShah}
+          image={NandiniVerat}
           name="Nandini Verat"
           phone="8850375571"
         />
         <CommitteeMemberCard
           designation="Literary Arts"
-          image={BhumiShah}
+          image={SanskritiM}
           name="Sanskriti Maheshwari"
           phone="7976016530"
         />
         <CommitteeMemberCard
           designation="Creative Arts"
-          image={BhumiShah}
+          image={UrjaSeth}
           name="Urja Sheth"
           phone="9137396966"
         />
@@ -143,13 +165,13 @@ function CommitteePage() {
         />
         <CommitteeMemberCard
           designation="Logistics"
-          image={BhumiShah}
+          image={RudrakshDave}
           name="Rudraksh Dave"
           phone="9769097906"
         />
         <CommitteeMemberCard
           designation="Logistics"
-          image={BhumiShah}
+          image={LubhawaniSinghal}
           name="Lubhawani Singhal"
           phone="9414100974"
         />
@@ -203,7 +225,7 @@ function CommitteePage() {
         />
         <CommitteeMemberCard
           designation="Informals"
-          image={BhumiShah}
+          image={FaruqDiddimani}
           name="Faruq Diddimani"
           phone="9833204688"
         />
@@ -239,7 +261,7 @@ function CommitteePage() {
         />
         <CommitteeMemberCard
           designation="Hospitality"
-          image={BhumiShah}
+          image={MuditAggarwal}
           name="Muddit Aggarwal"
           phone="8288831787"
         />
@@ -251,7 +273,7 @@ function CommitteePage() {
         />
         <CommitteeMemberCard
           designation="Productions"
-          image={BhumiShah}
+          image={DivyMehta}
           name="Divy Mehta"
           phone="9323787400"
         />
