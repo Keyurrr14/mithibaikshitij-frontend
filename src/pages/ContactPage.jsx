@@ -4,14 +4,15 @@ const ContactPage = () => {
   return (
       <div className='w-full h-full flex flex-col justify-center bg-main-gradient gap-4'>
         <div className='flex flex-col gap-10 justify-center items-center'>
-             <TextGenerateEffect duration={2.2} words={"Connect With Us!"} className="sm:p-5 p-2 text-white font-normal font-lusitana"/>
+             <TextGenerateEffect duration={2.2} words={"Connect With Us!"} className="sm:p-7 p-2 text-white font-normal font-lusitana"/>
         <div className='flex flex-1 w-full h-full items-center'>
             <img
             src="/assets/images/artists/someSinger.png"
-            className="w-1/2 h-full object-cover max-sm:hidden"
-            alt="SomeSinger" />
+            className="w-[51.5%] h-[71.3vh] object-cover hidden sm:block"
+            alt="SomeSinger"
+            style={{ minWidth: '51.5%', objectFit: 'cover' }} />
 
-            <div className='sm:w-1/2 w-full sm:mx-0 mx-2 h-full sm:glass-effect-no-border-radius glass-effect sm:px-10 px-2 sm:py-20 py-7'>
+            <div className='sm:w-1/2 w-full sm:mx-0 mx-2 sm:glass-effect-no-border-radius glass-effect sm:px-10 px-2 sm:py-20 py-7'>
                 <form action="" className="w-full h-full flex flex-col justify-center items-center sm:gap-10 gap-2">
                     <div className="sm:flex gap-10">
                         <TextField label="First Name *" type="text" name="firstName"/>
@@ -30,8 +31,16 @@ const ContactPage = () => {
                 </form>
             </div>
         </div>
+        </div>
+
+
+
+        <div className="w-full h-full flex justify-center items-center">
 
         </div>
+
+
+
     </div>
   )
 }

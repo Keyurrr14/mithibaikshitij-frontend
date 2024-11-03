@@ -5,9 +5,9 @@ import Navbar from "../components/Navbar.jsx";
 
 const RootLayout = () => {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full">
       <Navbar/>
-      <section className="h-screen">
+      <section className="flex flex-1 h-full">
         <Outlet />
       </section>
 
