@@ -18,6 +18,8 @@ export default {
         milker: ["Milker", "sans-serif"],
         lusitana: ["Lusitana", "sans-serif"],
         rubik: ["Rubik", "sans-serif"],
+        playfair: ["Playfair Display", "sans-serif"],
+        seasons: ["Seasons", "sans-serif"],
       },
       colors: {
         "primary-500": "#877EFF",

@@ -11,6 +11,7 @@ function CommitteeMemberCard({ designation, image, name, phone }) {
           className="w-full h-full object-cover rounded-3xl mx-auto"
           src={image}
           alt={name}
+          loading="lazy"
         />
       </div>
       <h1 className="text-center text-lg sm:text-xl md:text-xl font-milker tracking-wider text-white">

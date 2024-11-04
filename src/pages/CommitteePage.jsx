@@ -2,7 +2,7 @@ import React from "react";
 import CommitteeMemberCard from "../components/CommitteeMemberCard";
 import Background from "/assets/images/background.png";
 import BhumiShah from "/assets/images/committee/BhumiShah.webp";
-import DhruvAgarwal from "/assets/images/committee/DhruvAgarwal.png";
+import DhruvAgarwal from "/assets/images/committee/DhruvAgarwal.webp";
 import GehnaTibb from "/assets/images/committee/GehnaTibb.webp";
 import RudraTrivedi from "/assets/images/committee/RudraTrivedi.webp";
 import KrishVora from "/assets/images/committee/KrishVora.webp";
@@ -44,12 +44,12 @@ import ZainShah from "/assets/images/committee/ZainShah.webp";
 function CommitteePage() {
   return (
     <>
-    <div className='w-full min-h-screen' style={{backgroundImage: `url(${Background})`, backgroundSize: 'cover'}}>
-      <h1 className="font-lusitana pt-10 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+    <div className='w-full min-h-screen bg-gradient-to-br from-fuchsia-900 to-violet-900'>
+      <h1 className="font-seasons pt-10 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white">
         CORE COMMITTEE
       </h1>
 
-      <h1 className="font-lusitana pt-8 text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+      <h1 className="font-seasons pt-8 text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
         Top Core
       </h1>
 
@@ -59,6 +59,9 @@ function CommitteePage() {
           image={DhruvAgarwal}
           name="Dhruv Agarwal"
         />
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-24 mt-20 w-[95%] mx-auto">
         <CommitteeMemberCard
           designation="Deputy-Chairperson"
           image={BhumiShah}
@@ -89,7 +92,7 @@ function CommitteePage() {
         />
       </div>
 
-      <h1 className="font-lusitana pt-20 text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+      <h1 className="font-seasons pt-20 text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl text-white">
         Core
       </h1>
 
