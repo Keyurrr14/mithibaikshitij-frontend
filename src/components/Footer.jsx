@@ -25,16 +25,17 @@ const Footer = () => {
             </div>
 
             {/* Socials section */}
-            <div className="flex justify-center md:justify-start gap-4">
+            <div className="flex justify-center md:justify-start gap-5 flex-wrap">
               {socials.map((item) => (
                 <Link to={item.link} key={item.id} target="_blank">
                   <img
                     src={item.icon}
                     alt={item.title}
-                    className={`w-8 md:w-10 ${
-                      item.id === 2 ? "mt-2" : "mt-0"
+                    width={`${item.id === 1 || item.id === 2 ? 50 : 40 && item.id === 4 || item.id === 5 ? 35 : 40} `}
+                    className={`${
+                      item.id === 2 ? "mt-4" : "mt-0"
                     } ${
-                      item.id === 6 || item.id === 4 || item.id === 5 ? "mt-1" : "mt-2"
+                      item.id === 6 || item.id === 4 || item.id === 5 ? "mt-3" : "mt-2"
                     }`}
                   />
                 </Link>

@@ -7,7 +7,7 @@ const ContactPage = () => {
   return (
       <div className='w-full h-full flex flex-col justify-center bg-main-gradient gap-4'>
         <div className='flex flex-col gap-10 justify-center items-center'>
-             <TextGenerateEffect duration={2.2} words={"Connect With Us!"} className="sm:p-7 p-2 text-white font-normal font-lusitana"/>
+             <TextGenerateEffect duration={2.5} words={"Connect With Us!"} className="sm:p-7 p-2 text-white font-normal font-lusitana [text-shadow:_2px_4px_0px_#000000]"/>
         <div className='flex flex-1 w-full h-full items-center'>
             <img
             src="/assets/images/artists/someSinger.png"
