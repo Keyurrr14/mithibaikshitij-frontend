@@ -6,9 +6,14 @@ import KshtijText from "/assets/images/KshtijText.webp";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const onToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
@@ -40,7 +45,13 @@ function Navbar() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
-                <NavLink to="/core-committee">Core Committee</NavLink>
+                <div className="cursor-pointer" onClick={toggleDropdown}>
+                  Core Committee
+                  <div className={`absolute top-full left-0 bg-gradient-to-tr from-fuchsia-900 to-indigo-900 py-2 rounded-lg ${isDropdownOpen ? 'block' : 'hidden'}`}>
+                    <NavLink to="/core-committee" className="block px-4 py-2 hover:bg-fuchsia-800 whitespace-nowrap">Committee</NavLink>
+                    <NavLink to="/website-team" className="block px-4 py-2 hover:bg-fuchsia-800 whitespace-nowrap">Website Team</NavLink>
+                  </div>
+                </div>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
