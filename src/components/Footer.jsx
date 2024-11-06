@@ -4,7 +4,7 @@ import { footerLinksRight, socials } from "../../utils/data";
 const Footer = () => {
   return (
     <footer
-      className="font-seasons font-bold px-6 md:px-20 py-12 md:py-20"
+      className="font-bold px-6 md:px-20 py-12 md:py-20 font-lusitana"
     >
       <div className="flex flex-col md:flex-row md:justify-between gap-12 md:gap-0">
         <div className="flex flex-col gap-8 w-full md:w-auto">
@@ -48,7 +48,7 @@ const Footer = () => {
           </h3>
         </div>
 
-        <div className="flex justify-center md:justify-end md:w-1/3">
+        <div className="flex justify-center md:justify-end md:w-1/3 mt-10 font-seasons">
           <div className="flex flex-col gap-4 md:gap-7">
             {footerLinksRight.map((item) => (
               <Link

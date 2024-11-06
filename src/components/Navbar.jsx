@@ -3,7 +3,7 @@ import { IoClose, IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import Kshitij from "/assets/images/KshitijWhite.webp";
 import KshtijText from "/assets/images/KshtijText.webp";
-
+// bg-gradient-to-tr from-fuchsia-900 to-indigo-900
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -80,6 +80,7 @@ function Navbar() {
           </div>
         </nav>
       </header>
+      
     </>
   );
 }
