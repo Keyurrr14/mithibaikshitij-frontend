@@ -4,7 +4,7 @@ import { footerLinksRight, socials } from "../../utils/data";
 const Footer = () => {
   return (
     <footer
-      className="font-lusitana font-bold px-6 md:px-20 py-12 md:py-20"
+      className="font-seasons font-bold px-6 md:px-20 py-12 md:py-20"
     >
       <div className="flex flex-col md:flex-row md:justify-between gap-12 md:gap-0">
         <div className="flex flex-col gap-8 w-full md:w-auto">

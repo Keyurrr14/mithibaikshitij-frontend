@@ -18,7 +18,8 @@ export default {
   			manrope: ["Manrope", "sans-serif"],
   			milker: ["Milker", "sans-serif"],
   			lusitana: ["Lusitana", "sans-serif"],
-  			rubik: ["Rubik", "sans-serif"]
+  			rubik: ["Rubik", "sans-serif"],
+  			seasons: ["Seasons", "sans-serif"]
   		},
   		colors: {
   			'primary-500': '#877EFF',
