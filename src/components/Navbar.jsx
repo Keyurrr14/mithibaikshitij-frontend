@@ -18,6 +18,7 @@ function Navbar() {
 
   return (
     <>
+
       <header className="bg-gradient-to-tr from-fuchsia-900 to-indigo-900 font-seasons sticky top-0 z-50">
         <nav className="flex items-center justify-between w-[97%] mx-auto">
           <div className="flex items-center">
