@@ -25,11 +25,6 @@ function WebsiteTeamPage() {
           <CommitteeMemberCard
             designation="Developer"
             image={DhruvAgarwal}
-            name="Vaibhav Patel"
-          />
-          <CommitteeMemberCard
-            designation="Developer"
-            image={DhruvAgarwal}
             name="Mayin Kajaria"
           />
           <CommitteeMemberCard
@@ -41,6 +36,11 @@ function WebsiteTeamPage() {
             designation="Developer"
             image={DhruvAgarwal}
             name="Rajat Rane"
+          />
+          <CommitteeMemberCard
+            designation="Developer"
+            image={DhruvAgarwal}
+            name="Mohit Deore"
           />
         </div>
       </div>

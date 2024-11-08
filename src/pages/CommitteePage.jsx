@@ -64,7 +64,7 @@ function CommitteePage() {
         <CommitteeMemberCard
           designation="Deputy-Chairperson"
           image={BhumiShah}
-          name="Bhumi Shah"
+          name="Bhhumi Shah"
         />
       </div>
 
