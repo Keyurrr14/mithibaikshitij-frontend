@@ -1,72 +1,74 @@
 import React from "react";
 import CommitteeMemberCard from "../components/CommitteeMemberCard";
-import Background from "/assets/images/background.png";
-import BhumiShah from "/assets/images/committee/BhumiShah.webp";
-import DhruvAgarwal from "/assets/images/committee/DhruvAgarwal.png";
-import GehnaTibb from "/assets/images/committee/GehnaTibb.webp";
-import RudraTrivedi from "/assets/images/committee/RudraTrivedi.webp";
-import KrishVora from "/assets/images/committee/KrishVora.webp";
-import DarshJain from "/assets/images/committee/DarshJain.webp";
-import MuditAggarwal from "/assets/images/committee/MuditAggarwal.webp";
-import RiddhiBheda from "/assets/images/committee/RiddhiBheda.webp";
-import SoumyaPattnaik from "/assets/images/committee/SoumyaPattnaik.webp";
-import UrjaSeth from "/assets/images/committee/UrjaSeth.webp";
-import PehuMakharia from "/assets/images/committee/PehuMakharia.webp";
-import MayankSavankar from "/assets/images/committee/MayankSavankar.webp";
-import DivyMehta from "/assets/images/committee/DivyMehta.webp";
-import SunidhiYadav from "/assets/images/committee/SunidhiYadav.webp";
-import RajGoradia from "/assets/images/committee/RajGoradia.webp";
-import HasnainAgharia from "/assets/images/committee/HasnainAgharia.webp";
-import MokshaThakkar from "/assets/images/committee/MokshaThakkar.webp";
-import PrathamMaru from "/assets/images/committee/PrathamMaru.webp";
-import ApoorviBhatiya from "/assets/images/committee/ApoorviBhatiya.webp";
-import FaruqDiddimani from "/assets/images/committee/FaruqDiddimani.webp";
-import NandiniVerat from "/assets/images/committee/NandiniVerat.webp";
-import SanskritiM from "/assets/images/committee/SanskritiM.webp";
-import LubhawaniSinghal from "/assets/images/committee/LubhawaniSinghal.webp";
-import RudrakshDave from "/assets/images/committee/RudrakshDave.webp";
-import VeeralJain from "/assets/images/committee/VeeralJain.webp";
-import KrishGala from "/assets/images/committee/KrishGala.webp";
-import JainamShah from "/assets/images/committee/JainamShah.webp";
-import ShreshthKoolwal from "/assets/images/committee/ShreshthKoolwal.webp";
-import PrathamChordiya from "/assets/images/committee/PrathamChordiya.webp";
 import AdiChedda from "/assets/images/committee/AdiChedda.webp";
 import AdityaHaria from "/assets/images/committee/AdityaHaria.webp";
+import ApoorviBhatiya from "/assets/images/committee/ApoorviBhatiya.webp";
+import BhumiShah from "/assets/images/committee/BhumiShah.webp";
+import DarshJain from "/assets/images/committee/DarshJain.webp";
+import DhruvAgarwal from "/assets/images/committee/DhruvAgarwal.webp";
+import DivyMehta from "/assets/images/committee/DivyMehta.webp";
+import FaruqDiddimani from "/assets/images/committee/FaruqDiddimani.webp";
 import GauriKabra from "/assets/images/committee/GauriKabra.webp";
+import GehnaTibb from "/assets/images/committee/GehnaTibb.webp";
 import HardiPurohit from "/assets/images/committee/HardiPurohit.webp";
+import HasnainAgharia from "/assets/images/committee/HasnainAgharia.webp";
 import IshanayaGhia from "/assets/images/committee/IshanayaGhia.webp";
+import JainamShah from "/assets/images/committee/JainamShah.webp";
 import KanishkSurana from "/assets/images/committee/KanishkSurana.webp";
+import KrishGala from "/assets/images/committee/KrishGala.webp";
+import KrishVora from "/assets/images/committee/KrishVora.webp";
+import LubhawaniSinghal from "/assets/images/committee/LubhawaniSinghal.webp";
+import MayankSavankar from "/assets/images/committee/MayankSavankar.webp";
+import MokshaThakkar from "/assets/images/committee/MokshaThakkar.webp";
+import MuditAggarwal from "/assets/images/committee/MuditAggarwal.webp";
+import NandiniVerat from "/assets/images/committee/NandiniVerat.webp";
+import PehuMakharia from "/assets/images/committee/PehuMakharia.webp";
+import PrathamChordiya from "/assets/images/committee/PrathamChordiya.webp";
+import PrathamMaru from "/assets/images/committee/PrathamMaru.webp";
 import PrathanaShetty from "/assets/images/committee/PrathanaShetty.webp";
 import RaghavDrolia from "/assets/images/committee/RaghavDrolia.webp";
+import RajGoradia from "/assets/images/committee/RajGoradia.webp";
+import RiddhiBheda from "/assets/images/committee/RiddhiBheda.webp";
+import RudrakshDave from "/assets/images/committee/RudrakshDave.webp";
+import RudraTrivedi from "/assets/images/committee/RudraTrivedi.webp";
+import SanskritiM from "/assets/images/committee/SanskritiM.webp";
+import ShreshthKoolwal from "/assets/images/committee/ShreshthKoolwal.webp";
 import ShrishtiGupta from "/assets/images/committee/ShrishtiGupta.webp";
+import SoumyaPattnaik from "/assets/images/committee/SoumyaPattnaik.webp";
+import SunidhiYadav from "/assets/images/committee/SunidhiYadav.webp";
+import UrjaSeth from "/assets/images/committee/UrjaSeth.webp";
+import VeeralJain from "/assets/images/committee/VeeralJain.webp";
 import ZainShah from "/assets/images/committee/ZainShah.webp";
 
 function CommitteePage() {
   return (
     <>
-    <div className='w-full min-h-screen' style={{backgroundImage: `url(${Background})`, backgroundSize: 'cover'}}>
-      <h1 className="font-lusitana pt-10 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+    <div className='w-full min-h-screen bg-gradient-to-br from-fuchsia-900 to-violet-900'>
+      <h1 className="font-seasons pt-10 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white">
         CORE COMMITTEE
       </h1>
 
-      <h1 className="font-lusitana pt-8 text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+      <h1 className="font-seasons pt-8 text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
         Top Core
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-24 mt-20 w-[95%] mx-auto">
+      <div className="flex flex-wrap justify-center gap-20 mt-14 w-[95%] mx-auto pb-10">
         <CommitteeMemberCard
           designation="Chairperson"
           image={DhruvAgarwal}
           name="Dhruv Agarwal"
         />
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-20 mt-10 w-[95%] mx-auto">
         <CommitteeMemberCard
           designation="Deputy-Chairperson"
           image={BhumiShah}
-          name="Bhumi Shah"
+          name="Bhhumi Shah"
         />
       </div>
 
-      <div className="flex flex-wrap justify-center gap-24 mt-20 w-[95%] mx-auto">
+      <div className="flex flex-wrap justify-center gap-20 mt-14 w-[95%] mx-auto pb-10">
         <CommitteeMemberCard
           designation="Vice-Chairperson"
           image={GehnaTibb}
@@ -89,11 +91,11 @@ function CommitteePage() {
         />
       </div>
 
-      <h1 className="font-lusitana pt-20 text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+      <h1 className="font-seasons pt-20 text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl text-white">
         Core
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-24 mt-20 w-[95%] mx-auto">
+      <div className="flex flex-wrap justify-center gap-20 mt-14 w-[95%] mx-auto pb-10">
         <CommitteeMemberCard
           designation="Marketing"
           image={HasnainAgharia}

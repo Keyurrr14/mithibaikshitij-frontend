@@ -1,8 +1,10 @@
 import React from 'react'
+import { BackgroundGradientAnimation } from '../components/ui/bg-gradient-animation'
 
 function GalleryPage() {
   return (
-    <div className='flex flex-col items-center justify-center w-full min-h-screen bg-main-gradient p-8 max-sm:p-3 overflow-x-hidden'>
+
+    <div className='flex flex-col bg-main-gradient items-center justify-center w-full min-h-screen p-8 max-sm:p-3 overflow-x-hidden'>
       <div className='flex flex-col w-full sm:items-start items-center my-10 sm:ml-24 ml-0'>
         <img src="/assets/logo/text_logo.svg" alt="" className='-mb-4 sm:w-40 w-20 motion-preset-blur-right-lg' />
         <h3 className='sm:text-8xl text-5xl [text-shadow:_2px_4px_0px_#000000] text-white font-lusitana motion-preset-blur-right-lg'>Gallery</h3>
@@ -187,6 +189,7 @@ function GalleryPage() {
 
       </div>
     </div>
+
   )
 }
 
