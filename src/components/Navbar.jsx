@@ -19,7 +19,7 @@ function Navbar() {
   return (
     <>
 
-      <header className="bg-gradient-to-tr from-fuchsia-900 to-indigo-900 font-seasons sticky top-0 z-50">
+      <header className="bg-gradient-to-tr from-fuchsia-900 to-indigo-900 font-seasons sticky top-0 z-50 text-white">
         <nav className="flex items-center justify-between w-[97%] mx-auto">
           <div className="flex items-center">
             <img className="h-16 sm:h-18 md:h-20" src={Kshitij} alt="Kshitij Logo" />
@@ -80,7 +80,7 @@ function Navbar() {
           </div>
         </nav>
       </header>
-      
+
     </>
   );
 }
