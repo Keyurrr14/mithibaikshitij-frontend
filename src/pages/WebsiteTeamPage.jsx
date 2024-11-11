@@ -1,5 +1,5 @@
 import React from "react";
-import DhruvAgarwal from "../../public/assets/images/committee/DhruvAgarwal.webp";
+import DhruvAgarwal from "/assets/images/committee/DhruvAgarwal.webp";
 import CommitteeMemberCard from "../components/CommitteeMemberCard";
 
 function WebsiteTeamPage() {
@@ -35,7 +35,7 @@ function WebsiteTeamPage() {
           <CommitteeMemberCard
             designation="Developer"
             image={DhruvAgarwal}
-            name="Mayin Kajaria"
+            name="Mohit Deore"
           />
         </div>
       </div>
