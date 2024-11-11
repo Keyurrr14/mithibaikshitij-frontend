@@ -1,6 +1,5 @@
-import React from "react";
-import DhruvAgarwal from "/assets/images/committee/DhruvAgarwal.webp";
 import CommitteeMemberCard from "../components/CommitteeMemberCard";
+import DhruvAgarwal from "/assets/images/committee/DhruvAgarwal.webp";
 
 function WebsiteTeamPage() {
   return (
@@ -9,7 +8,6 @@ function WebsiteTeamPage() {
         <h1 className="font-seasons pt-10 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white">
           WEBSITE TEAM
         </h1>
-
 
         <div className="flex flex-wrap justify-center gap-24 mt-14 w-[80%] mx-auto pb-10">
           <CommitteeMemberCard
@@ -31,6 +29,11 @@ function WebsiteTeamPage() {
             designation="Developer"
             image={DhruvAgarwal}
             name="Rajat Rane"
+          />
+          <CommitteeMemberCard
+            designation="Developer"
+            image={DhruvAgarwal}
+            name="Mayin Kajaria"
           />
           <CommitteeMemberCard
             designation="Developer"
