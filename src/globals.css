@@ -162,7 +162,7 @@
     @apply invert brightness-0 transition;
   }
   .bg-main-gradient{
-    @apply bg-gradient-to-tr from-fuchsia-900 to-indigo-900
+    @apply bg-gradient-to-br from-fuchsia-900 to-violet-900
   }
   .bg-main-rev-gradient{
     @apply bg-gradient-to-br from-indigo-800 to-fuchsia-800
