@@ -1,7 +1,7 @@
 import React from "react";
 import Dino from "/assets/images/dino.gif";
 import Kshitij from "/assets/images/KshitijBlack.webp";
-
+import SponsorComponent from "./components/SponsorComponent";
 
 function BackSoonPage() {
   return (
@@ -19,6 +19,10 @@ function BackSoonPage() {
     </div>
         <img className="max-w-screen" src={Dino} alt="" />
         <h1 className="sm:text-4xl text-md font-arcade ">coming soon...</h1>
+
+
+
+        <SponsorComponent />
 
       </div>
 
