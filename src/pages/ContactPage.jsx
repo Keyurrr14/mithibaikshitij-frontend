@@ -4,20 +4,9 @@ import {TextGenerateEffect} from "@/components/ui/text-generate"
 import TextField from "@/components/ui/TextField"
 import Contacts from "@/components/contacts"
 import MapComponent from "@/components/MapComponent"
+import { db } from "@/FirebaseInit"
 
 const ContactPage = () => {
-    const firebaseConfig = {
-        apiKey: "AIzaSyC26GL6I-91HOk1znp126h6QdLhzFMGVRg",
-        authDomain: "kshitijtesting-a6294.firebaseapp.com",
-        databaseURL: "https://kshitijtesting-a6294-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "kshitijtesting-a6294",
-        storageBucket: "kshitijtesting-a6294.firebasestorage.app",
-        messagingSenderId: "933667500959",
-        appId: "1:933667500959:web:f5619d09707c544e8943aa"
-    };
-    const app = initializeApp(firebaseConfig);
-    const db = getDatabase(app);
-
     function getCurrentDateTime() {
         const now = new Date();
         const date = `${now.getDate().toString().padStart(2, '0')}/${(now.getMonth() + 1).toString().padStart(2, '0')}/${now.getFullYear()}`;

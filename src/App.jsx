@@ -8,13 +8,14 @@ import CommitteePage from './pages/CommitteePage.jsx';
 import WebsiteTeamPage from './pages/WebsiteTeamPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
+import HomePage from './pages/HomePage.jsx';
 
 const App = () => {
   return (
     <main className='min-h-screen'>
       <Routes>
         <Route element={<RootLayout />}>
-          <Route index element={<BackSoonPage />} />
+          <Route index element={<HomePage />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/gallery' element={<GalleryPage />} />
           <Route path='/core-committee' element={<CommitteePage />} />
