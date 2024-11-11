@@ -1,12 +1,12 @@
 import React from "react";
 import Dino from "/assets/images/dino.gif";
 import Kshitij from "/assets/images/KshitijBlack.webp";
-import SponsorComponent from "./components/SponsorComponent";
+import CarouselComponent from "./components/CarouselComponent";
 
 function BackSoonPage() {
   return (
 
-      <div className="flex flex-col h-screen w-full justify-center items-center gap-10 bg-white text-black">
+      <div className="flex flex-col min-h-screen w-full justify-center items-center gap-10 bg-white text-black">
         <div className="flex justify-center items-center gap-2">
           <img
             src={Kshitij}
@@ -22,7 +22,7 @@ function BackSoonPage() {
 
 
 
-        <SponsorComponent />
+        <CarouselComponent />
 
       </div>
 
