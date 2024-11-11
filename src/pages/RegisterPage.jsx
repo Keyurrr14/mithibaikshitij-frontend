@@ -1,11 +1,4 @@
 "use client"
-import { useState } from "react"
-import { toast } from "sonner"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import * as z from "zod"
-import TextField from "@/components/ui/TextField"
-import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
     Form,
@@ -16,7 +9,11 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import { TextGenerateEffect } from "@/components/ui/text-generate"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { initializeApp } from "firebase/app"
+import { getDatabase, push, set, ref as sRef } from "firebase/database"
+import { useForm } from "react-hook-form"
+import * as z from "zod"
 
 const formSchema = z.object({
     name: z.string().min(2).max(100),
@@ -26,6 +23,54 @@ const formSchema = z.object({
 });
 
 export default function MyForm() {
+    const firebaseConfig = {
+        apiKey: "AIzaSyBja2OqSDp_KgRmPH9H7Nd8YP6s7W9Roxw",
+        authDomain: "mithibai-kshitij.firebaseapp.com",
+        databaseURL: "https://mithibai-kshitij-default-rtdb.firebaseio.com",
+        projectId: "mithibai-kshitij",
+        storageBucket: "mithibai-kshitij.firebasestorage.app",
+        messagingSenderId: "74708424992",
+        appId: "1:74708424992:web:597da26fbd0fe12d31df45"
+      };
+      
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    function getCurrentDateTime() {
+        const now = new Date();
+        const date = `${now.getDate().toString().padStart(2, '0')}/${(now.getMonth() + 1).toString().padStart(2, '0')}/${now.getFullYear()}`;
+        const time = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}`;
+        return `${date} ${time}`;
+    }
+
+    const handleFormSubmit = async (event) => {
+        event.preventDefault();
+        const timestamp = getCurrentDateTime();
+        const name = event.target[0].value.trim();
+        const collegeName = event.target[1].value.trim();
+        const email = event.target[2].value.trim();
+        const phoneNumber = event.target[3].value.trim();
+
+        try {
+            const newRegistrationRef = push(sRef(db, 'CL Meet Registration'));
+            await set(newRegistrationRef, {
+                timestamp,
+                name,
+                collegeName,
+                email,
+                phoneNumber
+            });
+            
+            alert("We will contact you soon!");
+            form.reset(); // Reset all form fields
+            
+        } catch (error) {
+            // console.error("Error adding document: ", error);
+            // alert("An error occurred. Please try again.");
+        }
+    }
+
+
     const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -36,20 +81,6 @@ export default function MyForm() {
         }
     })
 
-    function onSubmit(values) {
-        try {
-            console.log(values);
-            toast(
-                <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-                    <code className="text-white">{JSON.stringify(values, null, 2)}</code>
-                </pre>
-            );
-        } catch (error) {
-            console.error("Form submission error", error);
-            toast.error("Failed to submit the form. Please try again.");
-        }
-    }
-
 
     return (
         <div className="min-h-screen w-full bg-gradient-to-br from-indigo-900 to-blue-900 flex-center p-4">
@@ -57,7 +88,7 @@ export default function MyForm() {
                 <h2 className="text-4xl font-semibold text-gray-100 text-center my-8 font-lusitana">Register</h2>
 
                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
+                    <form onSubmit={handleFormSubmit} className="space-y-5">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <FormField
                                 control={form.control}
@@ -71,6 +102,8 @@ export default function MyForm() {
                                                 className="bg-gray-800 border border-gray-700 text-gray-100 placeholder:text-gray-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 rounded-lg"
                                                 type="text"
                                                 {...field}
+                                                required
+                                                autoComplete="off"
                                             />
                                         </FormControl>
                                         <FormMessage className="text-red-400" />
@@ -90,6 +123,8 @@ export default function MyForm() {
                                                 className="bg-gray-800 border border-gray-700 text-gray-100 placeholder:text-gray-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 rounded-lg"
                                                 type="text"
                                                 {...field}
+                                                required
+                                                autoComplete="off"
                                             />
                                         </FormControl>
                                         <FormMessage className="text-red-400" />
@@ -110,6 +145,8 @@ export default function MyForm() {
                                             className="bg-gray-800 border border-gray-700 text-gray-100 placeholder:text-gray-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 rounded-lg"
                                             type="email"
                                             {...field}
+                                            required
+                                            autoComplete="off"
                                         />
                                     </FormControl>
                                     <FormMessage className="text-red-400" />
@@ -129,6 +166,8 @@ export default function MyForm() {
                                             className="bg-gray-800 border border-gray-700 text-gray-100 placeholder:text-gray-500 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 rounded-lg"
                                             type="tel"
                                             {...field}
+                                            required
+                                            autoComplete="off"
                                         />
                                     </FormControl>
                                     <FormMessage className="text-red-400" />
