@@ -11,7 +11,7 @@ function WebsiteTeamPage() {
         </h1>
 
 
-        <div className="flex flex-wrap justify-center gap-20 mt-14 w-[95%] mx-auto pb-10">
+        <div className="flex flex-wrap justify-center gap-24 mt-14 w-[80%] mx-auto pb-10">
           <CommitteeMemberCard
             designation="Developer"
             image={DhruvAgarwal}
@@ -21,11 +21,6 @@ function WebsiteTeamPage() {
             designation="Developer"
             image={DhruvAgarwal}
             name="Keyur Rathod"
-          />
-          <CommitteeMemberCard
-            designation="Developer"
-            image={DhruvAgarwal}
-            name="Mayin Kajaria"
           />
           <CommitteeMemberCard
             designation="Developer"
