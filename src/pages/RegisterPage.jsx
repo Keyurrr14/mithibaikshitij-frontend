@@ -10,10 +10,10 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { initializeApp } from "firebase/app"
-import { getDatabase, push, set, ref as sRef } from "firebase/database"
+import { push, set, ref as sRef } from "firebase/database"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
+import { db } from "@/FirebaseInit"
 
 const formSchema = z.object({
     name: z.string().min(2).max(100),
@@ -23,19 +23,6 @@ const formSchema = z.object({
 });
 
 export default function MyForm() {
-    const firebaseConfig = {
-        apiKey: "AIzaSyBja2OqSDp_KgRmPH9H7Nd8YP6s7W9Roxw",
-        authDomain: "mithibai-kshitij.firebaseapp.com",
-        databaseURL: "https://mithibai-kshitij-default-rtdb.firebaseio.com",
-        projectId: "mithibai-kshitij",
-        storageBucket: "mithibai-kshitij.firebasestorage.app",
-        messagingSenderId: "74708424992",
-        appId: "1:74708424992:web:597da26fbd0fe12d31df45"
-      };
-      
-    const app = initializeApp(firebaseConfig);
-    const db = getDatabase(app);
-
     function getCurrentDateTime() {
         const now = new Date();
         const date = `${now.getDate().toString().padStart(2, '0')}/${(now.getMonth() + 1).toString().padStart(2, '0')}/${now.getFullYear()}`;

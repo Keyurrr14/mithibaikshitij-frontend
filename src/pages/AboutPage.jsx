@@ -1,4 +1,5 @@
 import React from "react";
+import Pacman from "../components/Pacman";
 import Kshitij from "/assets/images/Kshitij.webp";
 import KshitijText from "/assets/images/KshtijText.webp";
 import MithibaiCollege from "/assets/images/MithibaiCollege.webp";
@@ -82,7 +83,9 @@ function AboutPage() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center p-4 md:p-8 lg:p-12 relative z-10">
+      <Pacman />
+
+      <div className="flex flex-col justify-center items-center mt-24 p-4 md:p-8 lg:p-12 relative z-10">
         <div className="w-[90%] md:w-[80%] lg:w-[80%] max-w-[1100px]">
           <img
             src={Kshitij}

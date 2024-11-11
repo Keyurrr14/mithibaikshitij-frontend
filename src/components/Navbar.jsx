@@ -41,7 +41,7 @@ function Navbar() {
         <nav className="flex items-center justify-between w-[97%] mx-auto">
           <div className="flex items-center">
             <img className="h-16 sm:h-18 md:h-20" src={Kshitij} alt="Kshitij Logo" />
-            <img className="h-10 sm:h-12 md:h-18" src={KshtijText} alt="Kshitij Text" />
+            <img className="h-8 sm:h-12 md:h-18" src={KshtijText} alt="Kshitij Text" />
           </div>
           <div
             className={`lg:static absolute ${!isMenuOpen ? "" : "bg-gradient-to-tr from-fuchsia-900 to-indigo-900"} lg:min-h-fit min-h-[100vh] top-0

@@ -1,0 +1,240 @@
+body{
+    /* padding-top: 100px; */
+    /* background-color: #333; */
+    margin-top: 50px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.path{
+    position: absolute;
+    width: 90%;
+    max-width: 1100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media (min-width: 640px) {
+    .path {
+        height: 80px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .path {
+        height: 100px;
+        padding: 20px;
+    }
+}
+
+.path::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 12px dotted white;
+    width: 100%;
+    top: 50%;
+    left: 0%;
+    margin-top: -6px;
+}
+
+.pacman{
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: -10%;
+    animation: MoveForward  8s linear infinite;
+    animation-delay: 1s;
+}
+
+.pacman::before, .pacman::after{
+    content: "";
+    position: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    border: solid 20px yellow;
+    margin-top: -20px;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    animation: MouthTop 0.5s ease infinite;
+}
+
+@media (min-width: 640px) {
+    .pacman::before, .pacman::after {
+        border-width: 25px;
+        margin-top: -25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .pacman::before, .pacman::after {
+        border-width: 30px;
+        margin-top: -30px;
+    }
+}
+
+.pacman::after{
+    border-color: yellow;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    animation: MouthBottom 0.5s ease infinite;
+}
+
+.ghost{
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 20%;
+    height: 50px;
+    width: 40px;
+    margin-top: -25px;
+    background-color: red;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    animation: MoveForward 8s linear infinite, FlashMe 0.8s linear infinite;
+    overflow: hidden;
+}
+
+@media (min-width: 640px) {
+    .ghost {
+        height: 60px;
+        width: 48px;
+        margin-top: -30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .ghost {
+        height: 70px;
+        width: 56px;
+        margin-top: -35px;
+    }
+}
+
+.ghost::before, .ghost::after{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 10px;
+    background-color: white;
+    border-radius: 100%;
+    top: 11px;
+    left: 4px;
+}
+
+.ghost::after{
+    left: 20px;
+}
+
+@media (min-width: 640px) {
+    .ghost::before, .ghost::after {
+        height: 18px;
+        width: 13px;
+        top: 15px;
+    }
+    .ghost::after {
+        left: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .ghost::before, .ghost::after {
+        height: 20px;
+        width: 15px;
+        top: 18px;
+    }
+    .ghost::after {
+        left: 30px;
+    }
+}
+
+.eyes::before, .eyes::after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    width: 5px;
+    height: 8px;
+    border-radius: 100%;
+    top: 15px;
+    left: 5px;
+    z-index: 99;
+}
+
+.eyes::after{
+    left: 21px;
+}
+
+@media (min-width: 640px) {
+    .eyes::before, .eyes::after {
+        width: 8px;
+        height: 10px;
+        top: 20px;
+        left: 6px;
+    }
+    .eyes::after {
+        left: 27px;
+    }
+}
+
+@media (min-width: 768px) {
+    .eyes::before, .eyes::after {
+        width: 8px;
+        height: 10px;
+        top: 24px;
+        left: 5px;
+    }
+    .eyes::after {
+        left: 30px;
+    }
+}
+
+.skirt, .skirt::before, .skirt::after{
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: solid 10px #5E1B85;
+    border-top-color: transparent;
+    bottom: -10px;
+}
+
+.skirt::before{
+    content: "";
+    left: 9px;
+    bottom: -9px;
+}
+.skirt::after{
+    content: "";
+    left: 28px;
+    bottom: -9px;
+}
+
+@keyframes MouthTop{
+    50%{
+        transform: rotate(44deg);
+    }
+}
+@keyframes MouthBottom{
+    50%{
+        transform: rotate(-44deg);
+    }
+}
+@keyframes MoveForward{
+    0%{
+        left: -10%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@keyframes FlashMe{
+    50%{
+        background-color: hotpink;
+    }
+}
