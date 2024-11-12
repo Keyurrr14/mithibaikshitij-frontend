@@ -9,11 +9,11 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { db } from "@/FirebaseInit"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { push, set, ref as sRef } from "firebase/database"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
-import { db } from "@/FirebaseInit"
 
 const formSchema = z.object({
     name: z.string().min(2).max(100),
@@ -39,7 +39,7 @@ export default function MyForm() {
         const phoneNumber = event.target[3].value.trim();
 
         try {
-            const newRegistrationRef = push(sRef(db, 'CL Meet Registration'));
+            const newRegistrationRef = push(sRef(db, 'clmeet'));
             await set(newRegistrationRef, {
                 timestamp,
                 name,
@@ -49,7 +49,7 @@ export default function MyForm() {
             });
             
             alert("We will contact you soon!");
-            form.reset(); // Reset all form fields
+            form.reset();
             
         } catch (error) {
             // console.error("Error adding document: ", error);
