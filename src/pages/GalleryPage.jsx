@@ -4,7 +4,7 @@ import { BackgroundGradientAnimation } from '../components/ui/bg-gradient-animat
 function GalleryPage() {
   return (
 
-    <div className='flex flex-col bg-main-gradient items-center justify-center w-full min-h-screen p-8 max-sm:p-3 overflow-x-hidden'>
+    <div className='flex flex-col bg-dark-3 items-center justify-center w-full min-h-screen p-8 max-sm:p-3 overflow-x-hidden'>
       <div className='flex flex-col w-full sm:items-start items-center my-10 sm:ml-24 ml-0'>
         <img src="/assets/logo/text_logo.svg" alt="" className='-mb-4 sm:w-40 w-20 motion-preset-blur-right-lg' />
         <h3 className='sm:text-8xl text-5xl [text-shadow:_2px_4px_0px_#000000] text-white font-lusitana motion-preset-blur-right-lg'>Gallery</h3>
@@ -13,7 +13,7 @@ function GalleryPage() {
         {/* First row */}
         <div className="col-span-2 row-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?auto=format&w=600&q=50"
+            src="/assets/images/Gallery/1.png"
             alt="Featured"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -22,7 +22,7 @@ function GalleryPage() {
 
         <div className="sm:rounded-2xl rounded-[5px] overflow-hidden " >
           <img
-            src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/06/Female_Woods_hike_1296x728-header-1-1296x728.jpg?w=300&q=50"
+            src="/assets/images/Gallery/2.png"
             alt="Gallery item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -31,7 +31,7 @@ function GalleryPage() {
 
         <div className="sm:rounded-2xl rounded-[5px] overflow-hidden ">
           <img
-            src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&w=300&q=50"
+            src="/assets/images/Gallery/3.png"
             alt="Gallery item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -41,7 +41,7 @@ function GalleryPage() {
         {/* Second row continues */}
         <div className="col-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1682687219800-bba120d709c5?auto=format&w=600&q=50"
+            src="/assets/images/Gallery/4.png"
             alt="Wide item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -51,7 +51,7 @@ function GalleryPage() {
         {/* Third row */}
         <div className="row-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden animation-timeline">
           <img
-            src="https://images.unsplash.com/photo-1682687220199-d0124f48f95b?auto=format&w=300&q=50"
+            src="/assets/images/Gallery/5.png"
             alt="Tall item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -61,16 +61,16 @@ function GalleryPage() {
         {/* Additional images */}
         <div className="col-span-2 row-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?auto=format&w=600&q=50"
+            src="/assets/images/Gallery/6.png"
             alt="Large item"
             className="w-full h-full object-cover"
             loading="lazy"
           />
         </div>
 
-        <div className="sm:rounded-2xl rounded-[5px] overflow-hidden ">
+        <div className="sm:rounded-2xl row-span-2 rounded-[5px] overflow-hidden ">
           <img
-            src="https://tnfd.global/wp-content/uploads/2023/09/Food-and-Agricultulre-cover-1.jpg?w=300&q=50"
+            src="/assets/images/Gallery/7.png"
             alt="Gallery item"
             className="w-full h-full object-cover a"
             loading="lazy"
@@ -79,7 +79,7 @@ function GalleryPage() {
 
         <div className="col-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1682695794947-17061dc284dd?auto=format&w=600&q=50"
+            src="/assets/images/Gallery/8.png"
             alt="Wide item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -88,7 +88,7 @@ function GalleryPage() {
 
         <div className=" col-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden ">
           <img
-            src="https://images.unsplash.com/photo-1682695799561-033f55f75b25?auto=format&w=300&q=50"
+            src="/assets/images/Gallery/9.png"
             alt="Gallery item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -97,7 +97,7 @@ function GalleryPage() {
 
         <div className="col-span-2 row-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden motion-preset-blur-down-lg">
           <img
-            src="https://images.unsplash.com/photo-1682686581264-c47e25e61d95?auto=format&w=600&q=50"
+            src="/assets/images/Gallery/10.png"
             alt="Large item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -106,7 +106,7 @@ function GalleryPage() {
 
         <div className="sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?auto=format&w=300&q=50"
+            src="/assets/images/Gallery/11.png"
             alt="Gallery item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -115,7 +115,7 @@ function GalleryPage() {
 
         <div className="sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://tapchimoitruong.vn/uploads/082024/Va%CC%82n%20Long%20-%20Ninh%20Bi%CC%80nh_f7155924.jpg?w=300&q=50"
+            src="/assets/images/Gallery/12.png"
             alt="Gallery item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -125,7 +125,7 @@ function GalleryPage() {
         {/* New items to fill gaps */}
         <div className="col-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1682695795557-17447f921f79?auto=format&w=600&q=50"
+            src="/assets/images/Gallery/18.png"
             alt="Wide item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -134,7 +134,7 @@ function GalleryPage() {
 
         <div className="row-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1682695798522-6e208131916d?auto=format&w=300&q=50"
+            src="/assets/images/Gallery/14.png"
             alt="Tall item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -143,7 +143,7 @@ function GalleryPage() {
 
         <div className="sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1682695797873-aa4cb6edd613?auto=format&w=300&q=50"
+            src="/assets/images/Gallery/15.png"
             alt="Gallery item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -152,7 +152,7 @@ function GalleryPage() {
 
         <div className="col-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1682695798522-6e208131916d?auto=format&w=300&q=50"
+            src="/assets/images/Gallery/16.png"
             alt="Tall item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -161,7 +161,7 @@ function GalleryPage() {
 
         <div className="col-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://tapchimoitruong.vn/uploads/082024/Va%CC%82n%20Long%20-%20Ninh%20Bi%CC%80nh_f7155924.jpg?w=300&q=50"
+            src="/assets/images/Gallery/17.png"
             alt="Gallery item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -169,7 +169,7 @@ function GalleryPage() {
         </div>
         <div className=" sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://tapchimoitruong.vn/uploads/082024/Va%CC%82n%20Long%20-%20Ninh%20Bi%CC%80nh_f7155924.jpg?w=300&q=50"
+            src="/assets/images/Gallery/19.png"
             alt="Gallery item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -179,7 +179,8 @@ function GalleryPage() {
 
         <div className="col-span-4 sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1682695795557-17447f921f79?auto=format&w=600&q=50"
+            // src="/assets/images/Gallery/13.png"
+            src="/assets/images/artists/someSinger.png"
             alt="Wide item"
             className="w-full h-full object-cover"
             loading="lazy"

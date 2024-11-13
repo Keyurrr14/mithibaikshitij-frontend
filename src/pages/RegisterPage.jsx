@@ -1,4 +1,4 @@
-"use client"
+
 import { Button } from "@/components/ui/button"
 import {
     Form,
@@ -70,7 +70,7 @@ export default function MyForm() {
 
 
     return (
-        <div className="min-h-screen w-full bg-gradient-to-br from-indigo-900 to-blue-900 flex-center p-4">
+        <div className="min-h-screen w-full flex-center p-4">
             <div className="w-full max-w-[70%] h-[70%] bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-800">
                 <h2 className="text-4xl font-semibold text-gray-100 text-center my-8 font-lusitana">Register</h2>
 
