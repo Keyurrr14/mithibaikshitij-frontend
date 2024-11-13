@@ -5,7 +5,7 @@ import TextField from "@/components/ui/TextField"
 import Contacts from "@/components/contacts"
 import MapComponent from "@/components/MapComponent"
 import { db } from "@/FirebaseInit"
-
+import bg from '/assets/images/bg.png'
 const ContactPage = () => {
     function getCurrentDateTime() {
         const now = new Date();
@@ -68,7 +68,7 @@ const ContactPage = () => {
     }
 
     return (
-        <div className='w-full h-full flex flex-col justify-center bg-main-gradient gap-4'>
+        <div className={`w-full h-full flex flex-col justify-center gap-4 bg-[url('/assets/images/bg.png')] !object-cover bg-cover`}>
             <div className='flex flex-col gap-10 justify-center items-center'>
                 
                 <div className='flex flex-1 w-full h-full items-center justify-evenly mt-16 motion-preset-fade-md '>

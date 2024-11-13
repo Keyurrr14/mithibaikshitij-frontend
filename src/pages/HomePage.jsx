@@ -1,8 +1,10 @@
 import AnimatedVideo from "/assets/AnimatedVideo.mp4";
+import SponsorComponent from "@/components/SponsorComponent";
+import CarouselComponent from "@/components/CarouselComponent";
 
 function HomePage() {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-fuchsia-900 to-violet-900">
+    <div className="w-full min-h-screen">
       <video
         autoPlay
         loop
@@ -49,7 +51,9 @@ function HomePage() {
           immersed, eager to return again and again for more adventures, more
           music, and more fun than you ever imagined.
         </p>
+        <CarouselComponent/>
       </div>
+      <SponsorComponent/>
     </div>
   );
 }

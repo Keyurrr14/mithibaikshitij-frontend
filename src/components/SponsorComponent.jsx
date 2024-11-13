@@ -27,7 +27,7 @@ import { SponsorMarquee } from './ui/sponsor-marquee'
 const SponsorComponent = () => {
 
   return (
-    <div className='w-full h-full flex-col'>
+    <div className='w-full flex-col my-10'>
         <SponsorMarquee direction='right' pauseOnHover={false} items={sponsors}/>
         <SponsorMarquee direction='left' pauseOnHover={false} items={sponsors}/>
     </div>

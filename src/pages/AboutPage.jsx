@@ -11,7 +11,7 @@ import TV from "/assets/images/TV.webp";
 
 function AboutPage() {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-fuchsia-900 to-violet-900 relative">
+    <div className="w-full min-h-screen bg-[url('/assets/images/bg.png')] !object-cover bg-cover relative">
       {/* Random Trophy Images */}
       <div className="hidden lg:block z-0">
         <img src={trophy} alt="Trophy" className="absolute w-16 h-16 top-[15%] left-[10%] opacity-50 rotate-12" />

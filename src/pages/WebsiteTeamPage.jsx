@@ -4,7 +4,7 @@ import DhruvAgarwal from "/assets/images/committee/DhruvAgarwal.webp";
 function WebsiteTeamPage() {
   return (
     <>
-      <div className="w-full min-h-screen bg-gradient-to-br from-fuchsia-900 to-violet-900">
+      <div className="w-full min-h-screen">
         <h1 className="font-seasons pt-10 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white">
           WEBSITE TEAM
         </h1>

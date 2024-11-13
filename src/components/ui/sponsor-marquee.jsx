@@ -57,7 +57,7 @@ export const SponsorMarquee = ({
     (<div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  w-full overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 w-full overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}>
       <ul
@@ -69,16 +69,17 @@ export const SponsorMarquee = ({
         )}>
         {items.map((item, idx) => (
           <li
-            className="w-[300px] max-w-full relative rounded-2xl border border-b-0 flex-center border-slate-700 px-8 py-4 h-[150px] md:w-[300px]"
+            className="max-w-full relative rounded-2xl flex-center p-10 h-[150px] md:w-[300px]"
             style={{
               background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
+                // "#3d1e77",
+                "#090057"
             }}
             key={item.name}>
             <div>
                 <img
                     src={item.src}
-                    className="h-24 w-48 object-cover"
+                    className="h-28 w-48 object-cover rounded-md"
                 />
             </div>
           </li>
