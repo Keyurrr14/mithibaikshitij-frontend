@@ -45,7 +45,7 @@ function HomePage() {
         <source src={AnimatedVideo} type="video/mp4" />
       </video>
       <div className="w-[90%] md:w-[80%] lg:w-[80%] max-w-[1100px] mx-auto flex flex-col items-center justify-center">
-        <h1 className="font-seasons pt-14 pb-5 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white">
+        <h1 className="font-seasons pt-14 pb-5 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white [text-shadow:_2px_4px_0px_#000000]">
           The Arcade WareHouse
         </h1>
 
@@ -82,8 +82,8 @@ function HomePage() {
           immersed, eager to return again and again for more adventures, more
           music, and more fun than you ever imagined.
         </p>
-        
-        <h1 className="font-seasons pt-10 pb-5 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white">
+
+        <h1 className="font-seasons pt-10 pb-5 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white [text-shadow:_2px_4px_0px_#000000]">
           Countdown
         </h1>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-12 lg:gap-16 mb-10 p-4 sm:p-6 bg-transparent rounded-xl backdrop-blur-sm">
