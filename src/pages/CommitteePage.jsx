@@ -175,7 +175,7 @@ function CommitteePage() {
           phone="9137396966"
         />
         <CommitteeMemberCard
-          designation="Technnicals"
+          designation="Technicals"
           image={ShreshthKoolwal}
           name="Shreshth Koolwal"
           phone="8875762015"
