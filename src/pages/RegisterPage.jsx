@@ -47,10 +47,10 @@ export default function MyForm() {
                 email,
                 phoneNumber
             });
-            
+
             alert("We will contact you soon!");
             form.reset();
-            
+
         } catch (error) {
             // console.error("Error adding document: ", error);
             // alert("An error occurred. Please try again.");
@@ -74,25 +74,24 @@ export default function MyForm() {
 
             <div className="w-full h-full flex-center bg-[url('/assets/images/bg-items.png')] bg-cover ">
 
-            <div className="w-full sm:max-w-[70%] h-[70%] bg-[#592D62]/60 rounded-[3rem]  p-8 shadow-[rgba(17,17,26,0.4)_0px_8px_24px,_rgba(17,17,26,0.4)_0px_16px_56px,_rgba(17,17,26,0.4)_0px_24px_80px]">
-                <h2 className="text-6xl font-bold text-gray-100 text-center my-8 font-lusitana [text-shadow:_2px_4px_0px_#000000]">Register</h2>
+            <div className="w-full sm:max-w-[70%]  h-[80%] bg-[#592D62]/60 rounded-[3rem]  p-8 shadow-[rgba(17,17,26,0.4)_0px_8px_24px,_rgba(17,17,26,0.4)_0px_16px_56px,_rgba(17,17,26,0.4)_0px_24px_80px]">
+                <h2 className="sm:text-6xl text-5xl font-bold text-gray-100 text-center my-8 font-lusitana [text-shadow:_2px_4px_0px_#000000]">Register</h2>
 
                 <Form {...form}>
                     <form onSubmit={handleFormSubmit} className="sm:space-y-20 sm:mt-20">
-                        <div className="sm:flex sm:justify-evenly">
+                        <div className="sm:flex  sm:justify-evenly gap-4">
                             <FormField
                                 control={form.control}
                                 name="name"
                                 render={({ field }) => (
                                     <FormItem className="flex flex-col">
-                                        <FormLabel className="text-white sm:text-xl text-md font-normal font-lusitana sm:mt-0 mt-4">Name *</FormLabel>
+                                        <FormLabel className="text-white sm:text-xl text-lg font-normal font-lusitana sm:mt-0 mt-4">Name *</FormLabel>
                                         <FormControl>
                                             <Input
-                                                placeholder="Enter your name"
                                                 className="w-full md:max-w-xs sm:text-2xl text-md sm:p-2 p-1
-                                                 bg-transparent border-b-[1px] sm:border-b-2 border-gray-400/80 
+                                                 bg-transparent border-b-[1px] sm:border-b-2 border-gray-400/80
                                                  outline-none text-white font-lusitana
-                                                 
+
                                                  "
                                                 type="text"
                                                 {...field}
@@ -110,14 +109,14 @@ export default function MyForm() {
                                 name="collegeName"
                                 render={({ field }) => (
                                     <FormItem className="flex flex-col">
-                                        <FormLabel className="text-white sm:text-xl text-md font-normal font-lusitana sm:mt-0 mt-4">College Name *</FormLabel>
+                                        <FormLabel className="text-white sm:text-xl text-lg font-normal font-lusitana sm:mt-0 mt-4">College Name *</FormLabel>
                                         <FormControl>
                                             <Input
-                                                placeholder="Enter your college name"
-                                                className="w-full md:max-w-xs sm:text-2xl text-md sm:p-2 p-1
-                                                 bg-transparent border-b-[1px] sm:border-b-2 border-gray-400/80 
+
+                                                className="w-full md:max-w-xs sm:text-2xl text-lg sm:p-2 p-1
+                                                 bg-transparent border-b-[1px] sm:border-b-2 border-gray-400/80
                                                  outline-none text-white font-lusitana
-                                                 
+
                                                  "
                                                 type="text"
                                                 {...field}
@@ -131,20 +130,20 @@ export default function MyForm() {
                             />
                         </div>
 
-                                <div className="sm:flex sm:justify-evenly">
+                            <div className="sm:flex sm:justify-evenly gap-4">
                                 <FormField
                             control={form.control}
                             name="email"
                             render={({ field }) => (
                                 <FormItem className="flex flex-col">
-                                    <FormLabel className="text-white sm:text-xl text-md font-normal font-lusitana sm:mt-0 mt-4">Email *</FormLabel>
+                                    <FormLabel className="text-white sm:text-xl text-lg font-normal font-lusitana sm:mt-0 mt-4">Email *</FormLabel>
                                     <FormControl>
                                         <Input
-                                            placeholder="Enter your email"
-                                            className="w-full md:max-w-xs sm:text-2xl text-md sm:p-2 p-1
-                                                 bg-transparent border-b-[1px] sm:border-b-2 border-gray-400/80 
+
+                                            className="w-full md:max-w-xs sm:text-2xl text-lg sm:p-2 p-1
+                                                 bg-transparent border-b-[1px] sm:border-b-2 border-gray-400/80
                                                  outline-none text-white font-lusitana
-                                                 
+
                                                  "
                                             {...field}
                                             required
@@ -164,11 +163,10 @@ export default function MyForm() {
                                     <FormLabel className="text-white sm:text-xl text-md font-normal font-lusitana sm:mt-0 mt-4">Phone number *</FormLabel>
                                     <FormControl>
                                         <Input
-                                            placeholder="Enter your phone number"
                                             className="w-full md:max-w-xs sm:text-2xl text-md sm:p-2 p-1
-                                                 bg-transparent border-b-[1px] sm:border-b-2 border-gray-400/80 
+                                                 bg-transparent border-b-[1px] sm:border-b-2 border-gray-400/80
                                                  outline-none text-white font-lusitana
-                                                 
+
                                                  "
                                             type="tel"
                                             {...field}
@@ -180,17 +178,20 @@ export default function MyForm() {
                                 </FormItem>
                             )}
                         />
-                                </div>
+                            </div>
 
-                        <Button
+                                                   <Button
                             type="submit"
-                            className="border-2 hover:bg-gray-300 flex justify-self-center w-[65%] border-black dark:border-white uppercase bg-white text-black transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] font-lusitana sm:mt-0 mt-7"
+                            className="border-2 hover:bg-gray-300 flex justify-self-center w-[65%] border-black dark:border-white uppercase bg-white text-black transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] font-lusitana mt-7"
                         >
                             Submit
                         </Button>
                     </form>
                 </Form>
+
+
             </div>
+
             </div>
         </div>
     )
