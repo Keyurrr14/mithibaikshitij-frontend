@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Kshitij from "/assets/images/KshitijWhite.webp";
 import KshtijText from "/assets/images/KshtijText.webp";
 
@@ -8,7 +8,6 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
-  const path = useLocation();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -32,21 +31,20 @@ function Navbar() {
   };
 
   const handleNavLinkClick = () => {
-    
     setIsMenuOpen(false);
     setIsDropdownOpen(false);
   };
 
   return (
     <>
-      <header className="bg-dark-1 opacity-90 font-seasons z-50 text-white">
+      <header className="bg-dark-1/90 font-seasons sticky top-0 z-50 text-white">
         <nav className="flex items-center justify-between w-[97%] mx-auto">
           <div className="flex items-center">
             <img className="h-16 sm:h-18 md:h-20" src={Kshitij} alt="Kshitij Logo" />
-            <img className="h-8 sm:h-12 md:h-18" src={KshtijText} alt="Kshitij Text" />
+            <img className="h-10 sm:h-12 md:h-18" src={KshtijText} alt="Kshitij Text" />
           </div>
           <div
-            className={`lg:static absolute ${!isMenuOpen ? "" : "bg-gradient-to-tr from-fuchsia-900 to-indigo-900"} lg:min-h-fit min-h-[100vh] top-0
+            className={`lg:static absolute ${!isMenuOpen ? "" : "bg-dark-1/90"} lg:min-h-fit min-h-[100vh] top-0
             ${isMenuOpen ? "right-0" : "right-[-100%]"}
             lg:w-auto w-full flex items-center justify-center px-5
             transition-all duration-300 ease-in
@@ -54,23 +52,21 @@ function Navbar() {
           >
             <ul className="flex lg:flex-row flex-col lg:items-center items-center lg:gap-10 gap-8 font-bold text-lg">
               <li className="relative group">
-                <NavLink to="/" className='' onClick={handleNavLinkClick} >Home</NavLink>
+                <NavLink to="/" className="block" onClick={handleNavLinkClick}>Home</NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
-                <NavLink to="/about" onClick={handleNavLinkClick}  className='' >About Us
+                <NavLink to="/about" onClick={handleNavLinkClick}>About Us</NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-                </NavLink>
-                
               </li>
               <li className="relative group">
-                <NavLink to="/gallery" onClick={handleNavLinkClick}  className='' >Gallery</NavLink>
+                <NavLink to="/gallery" onClick={handleNavLinkClick}>Gallery</NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group" ref={dropdownRef}>
                 <div className="cursor-pointer" onClick={toggleDropdown}>
                   Core Committee
-                  <div className={`absolute top-full left-0 bg-gradient-to-tr from-fuchsia-900 to-indigo-900 py-2 rounded-lg z-50 ${isDropdownOpen ? 'block' : 'hidden'}`}>
+                  <div className={`absolute top-full left-0 bg-dark-1/90 py-2 rounded-lg z-50 ${isDropdownOpen ? 'block' : 'hidden'}`}>
                     <NavLink to="/core-committee" className="block px-5 py-2 hover:bg-fuchsia-800 whitespace-nowrap text-md" onClick={handleNavLinkClick}>Committee</NavLink>
                     <NavLink to="/website-team" className="block px-5 py-2 hover:bg-fuchsia-800 whitespace-nowrap text-md" onClick={handleNavLinkClick}>Website Team</NavLink>
                   </div>
@@ -78,11 +74,11 @@ function Navbar() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
-                <NavLink to="/contact" onClick={handleNavLinkClick} className='' >Contact Us</NavLink>
+                <NavLink to="/contact" onClick={handleNavLinkClick}>Contact Us</NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
-                <NavLink to="/register" onClick={handleNavLinkClick}  className=''>Register</NavLink>
+                <NavLink to="/register" onClick={handleNavLinkClick}>Register</NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
             </ul>
