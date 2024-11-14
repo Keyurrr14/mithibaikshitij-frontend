@@ -53,7 +53,7 @@ function HomePage() {
         </p>
         <CarouselComponent/>
       </div>
-      <SponsorComponent/>
+      {/* <SponsorComponent/> */}
     </div>
   );
 }
