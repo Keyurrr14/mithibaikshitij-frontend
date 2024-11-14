@@ -54,17 +54,17 @@ function Navbar() {
           >
             <ul className="flex lg:flex-row flex-col lg:items-center items-center lg:gap-10 gap-8 font-bold text-lg">
               <li className="relative group">
-                <NavLink to="/" className={({ isActive }) => isActive ? `block bg-white rounded-lg text-black px-4` : `block`} onClick={handleNavLinkClick} >Home</NavLink>
+                <NavLink to="/" className='' onClick={handleNavLinkClick} >Home</NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
-                <NavLink to="/about" onClick={handleNavLinkClick}  className={({ isActive }) => isActive ? ` bg-white rounded-lg text-black px-4` : `block`} >About Us
+                <NavLink to="/about" onClick={handleNavLinkClick}  className='' >About Us
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                 </NavLink>
                 
               </li>
               <li className="relative group">
-                <NavLink to="/gallery" onClick={handleNavLinkClick}  className={({ isActive }) => isActive ? `block bg-white rounded-lg text-black px-4` : `block`} >Gallery</NavLink>
+                <NavLink to="/gallery" onClick={handleNavLinkClick}  className='' >Gallery</NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group" ref={dropdownRef}>
@@ -78,11 +78,11 @@ function Navbar() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
-                <NavLink to="/contact" onClick={handleNavLinkClick} className={({ isActive }) => isActive ? `block bg-white rounded-lg text-black px-4` : `block`} >Contact Us</NavLink>
+                <NavLink to="/contact" onClick={handleNavLinkClick} className='' >Contact Us</NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
-                <NavLink to="/register" onClick={handleNavLinkClick}  className={({ isActive }) => isActive ? `block bg-white rounded-lg text-black px-4` : `block`}>Register</NavLink>
+                <NavLink to="/register" onClick={handleNavLinkClick}  className=''>Register</NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
             </ul>

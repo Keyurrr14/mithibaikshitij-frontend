@@ -75,7 +75,7 @@ export const SponsorMarquee = ({
                 // "#3d1e77",
                 "#090057"
             }}
-            key={item.name}>
+            key={item.idx}>
             <div>
                 <img
                     src={item.src}
