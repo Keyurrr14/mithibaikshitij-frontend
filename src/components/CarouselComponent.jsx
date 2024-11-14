@@ -5,58 +5,56 @@ import { FaPlayCircle } from "react-icons/fa";
 import { BsFillSuitHeartFill } from "react-icons/bs";
 import { IoMdShuffle } from "react-icons/io";
 import { useState } from "react";
-const Images = [
-  "/assets/images/carousel/kk.png",
-  "/assets/images/carousel/sunidhi.png",
-  "/assets/images/carousel/king.png",
-  "/assets/images/carousel/javed.png",
-  "/assets/images/carousel/sachin.png",
-  "/assets/images/carousel/amit.png",
-  "/assets/images/carousel/yellow.png",
-];
 
 const imagesData = [
   {
     name: "KK",
     year: "Kshitij `21",
-    img: "/assets/images/carousel/kk.png",
+    img: "/assets/images/carousel/kk.jpg",
     time: "1:36 / 4:45",
     bg: 'bg-red'
   },
   {
-    name: "KKK",
-    year: "Kshitij `22",
-    img: "/assets/images/carousel/amit.png",
+    name: "Amit Trivedi",
+    year: "Kshitij `23",
+    img: "/assets/images/carousel/amit.jpg",
     time: "3:36 / 4:45",
     bg: 'bg-black'
   },
   {
-    name: "KKkk",
+    name: "Yellow Diary",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/yellow.png",
+    img: "/assets/images/carousel/yellow.jpg",
     time: "2:46 / 4:45",
     bg: 'bg-yellow-500'
   },
   {
-    name: "KKkk",
-    year: "Kshitij `23",
-    img: "/assets/images/carousel/yellow.png",
-    time: "2:46 / 4:45",
-    bg: 'bg-yellow-500'
+    name: "Javed Ali",
+    year: "Kshitij `22",
+    img: "/assets/images/carousel/javed.jpg",
+    time: "2:14 / 3:36",
+    bg: 'bg-dark-3'
   },
   {
-    name: "KKkk",
-    year: "Kshitij `23",
-    img: "/assets/images/carousel/yellow.png",
-    time: "2:46 / 4:45",
-    bg: 'bg-yellow-500'
+    name: "King",
+    year: "Kshitij `22",
+    img: "/assets/images/carousel/king.jpg",
+    time: "1:27 / 4:29",
+    bg: 'bg-blue-700'
   },
   {
-    name: "KKkk",
+    name: "Sachin",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/yellow.png",
+    img: "/assets/images/carousel/sachin.jpg",
     time: "2:46 / 4:45",
-    bg: 'bg-yellow-500'
+    bg: 'bg-purple-800'
+  },
+  {
+    name: "Sunidhi Chauhan",
+    year: "Kshitij `23",
+    img: "/assets/images/carousel/sunidhi.jpg",
+    time: "2:46 / 4:45",
+    bg: 'bg-indigo-800'
   },
 ];
 
