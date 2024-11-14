@@ -4,147 +4,161 @@ import "@splidejs/react-splide/css";
 import { FaPlayCircle } from "react-icons/fa";
 import { BsFillSuitHeartFill } from "react-icons/bs";
 import { IoMdShuffle } from "react-icons/io";
-const Images = [
-  "/assets/images/carousel/kk.png",
-  "/assets/images/carousel/sunidhi.png",
-  "/assets/images/carousel/king.png",
-  "/assets/images/carousel/javed.png",
-  "/assets/images/carousel/sachin.png",
-  "/assets/images/carousel/amit.png",
-  "/assets/images/carousel/yellow.png",
-];
+import { useState } from "react";
 
 const imagesData = [
   {
     name: "KK",
     year: "Kshitij `21",
-    img: "/assets/images/carousel/kk.png",
+    img: "/assets/images/carousel/kk.jpg",
     time: "1:36 / 4:45",
     bg: 'bg-red'
   },
   {
-    name: "KKK",
-    year: "Kshitij `22",
-    img: "/assets/images/carousel/amit.png",
+    name: "Amit Trivedi",
+    year: "Kshitij `23",
+    img: "/assets/images/carousel/amit.jpg",
     time: "3:36 / 4:45",
     bg: 'bg-black'
   },
   {
-    name: "KKkk",
+    name: "Yellow Diary",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/yellow.png",
+    img: "/assets/images/carousel/yellow.jpg",
     time: "2:46 / 4:45",
     bg: 'bg-yellow-500'
   },
   {
-    name: "KKkk",
-    year: "Kshitij `23",
-    img: "/assets/images/carousel/yellow.png",
-    time: "2:46 / 4:45",
-    bg: 'bg-yellow-500'
+    name: "Javed Ali",
+    year: "Kshitij `22",
+    img: "/assets/images/carousel/javed.jpg",
+    time: "2:14 / 3:36",
+    bg: 'bg-dark-3'
   },
   {
-    name: "KKkk",
-    year: "Kshitij `23",
-    img: "/assets/images/carousel/yellow.png",
-    time: "2:46 / 4:45",
-    bg: 'bg-yellow-500'
+    name: "King",
+    year: "Kshitij `22",
+    img: "/assets/images/carousel/king.jpg",
+    time: "1:27 / 4:29",
+    bg: 'bg-blue-700'
   },
   {
-    name: "KKkk",
+    name: "Sachin",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/yellow.png",
+    img: "/assets/images/carousel/sachin.jpg",
     time: "2:46 / 4:45",
-    bg: 'bg-yellow-500'
+    bg: 'bg-purple-800'
+  },
+  {
+    name: "Sunidhi Chauhan",
+    year: "Kshitij `23",
+    img: "/assets/images/carousel/sunidhi.jpg",
+    time: "2:46 / 4:45",
+    bg: 'bg-indigo-800'
   },
 ];
 
 const CarouselComponent = () => {
-  return (
-    <div className="w-[100%] h-full my-10">
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        className=""
-      >
-        <Splide
-          aria-label="My Favorite Images"
-          className="w-[1000px]"
-          options={{
-            type: "loop",
-            perPage: 3,
-            autoplay: true,
-            rewind: true,
-            gap: "1rem",
-            height: "100%",
-            width: "100%",
-            pagination: false,
-            arrows: true,
-            extensions: { AutoScroll },
-            autoScroll: {
-              speed: 10,
-              pauseOnHover: false,
-            },
-          }}
-        >
-          {imagesData.map((image, index) => (
-            <SplideSlide key={index} className={`${index === 1 && "scale-100"} my-auto transition-all`}>
-              {/* <img src={image} alt={image} style={{ width: '100%', height: '100%', borderRadius:'10px', objectFit:'cover' }}
-                            // className={`${index === 1 && 'scale-105' }`}
+    const [activeIndex, setActiveIndex] = useState(null);
 
-                        /> */}
+    // Update active index when slide changes
+    const handleMove = (splide) => {
+        const currentIndex = splide.index;
+        setActiveIndex(currentIndex);
+    };
 
-              <div
-                className={`${image.bg} flex flex-col justify-evenly gap-3`}
-                style={{
-                  height: `${index === 1 ? "600px" : "500px"}  `,
-                  borderRadius: "10px",
-                  objectFit: "cover",
-                }}
-              >
-                <div className="w-full flex-center">
-                  <img
-                    src={image.img}
-                    alt={image.name}
-                    className="object-cover w-44 h-44"
-                  />
-                </div>
+    const handleScale = (index) => {
+        return index === 1 || index === 4 || index === 7 || index === 10;
+    }
 
-                <div className="flex flex-col gap-1 ml-7 ">
-                  <h1 className="text-3xl font-bold text-white">
-                    {image.name}
-                  </h1>
-                  <p className="text-xs text-white">{image.year}</p>
+    return (
+        <div className="w-full my-5 md:my-10">
+            <div className="flex justify-center items-center">
+                <Splide
+                    onMove={handleMove}
+                    aria-label="My Favorite Images"
+                    className="w-[90vw] md:w-[1000px]"
+                    options={{
+                        type: "loop",
+                        perPage: 3,
+                        focus: 'center',
+                        perMove: 1,
+                        autoplay: true,
+                        rewind: true,
+                        gap: "1rem",
+                        pagination: false,
+                        arrows: true,
+                        extensions: { AutoScroll },
+                        autoScroll: {
+                            speed: 10,
+                            pauseOnHover: false,
+                        },
+                        breakpoints: {
+                            1024: {
+                                perPage: 2,
+                            },
+                            640: {
+                                perPage: 1,
+                            }
+                        },
+                    }}
+                >
+                    {imagesData.map((image, index) => (
+                        <SplideSlide key={index}>
+                            <div
+                                className={`${image.bg} flex flex-col justify-evenly gap-3 transition-transform duration-300`}
+                                style={{
+                                    height: "500px",
+                                    borderRadius: "10px",
 
-                  <div className="flex items-center justify-start w-full">
-                    <div className="bg-white rounded-full h-2 mr-3 w-52 relative">
-                      <div className="h-4 w-4 bg-gray-300 rounded-full absolute -top-[4px] left-20"></div>
-                    </div>
-                    <FaPlayCircle className="text-white" size={40} />
-                  </div>
+                                }}
+                            >
+                                <div className="w-full flex-center">
+                                    <img
+                                        src={image.img}
+                                        alt={image.name}
+                                        className="object-cover w-44 h-44 md:w-48 md:h-48"
+                                    />
+                                </div>
 
-                  <p className="text-xs text-white">{image.time}</p>
+                                <div className="flex flex-col gap-1 px-4 md:px-7">
+                                    <h1 className="text-2xl md:text-3xl font-bold text-white">
+                                        {image.name}
+                                    </h1>
+                                    <p className="text-xs text-white">{image.year}</p>
 
-                    <div className="flex w-full justify-start gap-2 mt-3">
-                        <div className="bg-white/30 text-white p-2 rounded-full">
-                            < BsFillSuitHeartFill />
-                        </div>
-                        <div className="bg-white/30 text-white p-2 rounded-full">
-                             <IoMdShuffle />
-                        </div>
-                    </div>
+                                    <div className="flex items-center justify-start w-full gap-3">
+                                        <div className="relative flex-1 h-2 bg-white rounded-full">
+                                            <div
+                                                className="absolute top-0 left-0 h-full bg-gray-400 rounded-full"
+                                                style={{ width: '60%' }}  // You can make this dynamic
+                                            />
+                                            <div
+                                                className="absolute w-3 h-3 md:w-4 md:h-4 bg-gray-300 rounded-full -top-[2px] md:-top-[4px]"
+                                                style={{ left: '60%', transform: 'translateX(-50%)' }}  // Align with progress
+                                            />
+                                        </div>
+                                        <FaPlayCircle className="text-white w-6 h-6 md:w-8 md:h-8 flex-shrink-0" />
+                                    </div>
 
-                </div>
-              </div>
-            </SplideSlide>
-          ))}
-        </Splide>
-      </div>
-    </div>
-  );
+                                    <p className="text-xs text-white">{image.time}</p>
+
+                                    <div className="flex w-full justify-start gap-2 mt-3">
+                                        <div className="bg-white/30 text-white p-1.5 md:p-2 rounded-full">
+                                            <BsFillSuitHeartFill size={16} />
+                                        </div>
+                                        <div className="bg-white/30 text-white p-1.5 md:p-2 rounded-full">
+                                            <IoMdShuffle size={16} />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </SplideSlide>
+                    ))}
+                </Splide>
+            </div>
+        </div>
+    );
 };
 
 export default CarouselComponent;

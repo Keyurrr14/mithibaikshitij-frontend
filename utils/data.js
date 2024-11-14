@@ -3,7 +3,7 @@ export const footerLinksRight = [{
     link: '/',
 },
 {
-    title: 'About us',
+    title: 'About Us',
     link: '/about',
 },
 {
