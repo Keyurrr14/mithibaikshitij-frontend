@@ -11,7 +11,7 @@ function HomePage() {
   });
 
   const calculateTimeLeft = () => {
-    const eventDate = new Date('2025-01-08');
+    const eventDate = new Date('2025-01-08T00:00:00');
     const currentDate = new Date();
     const difference = eventDate - currentDate;
 
