@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { footerLinksRight, socials } from "../../utils/data";
+import KshtijText from "/assets/images/KshtijText.webp"
 
 const Footer = () => {
   return (
@@ -18,25 +19,19 @@ const Footer = () => {
               />
 
               <img
-                src="/assets/logo/text_logo.svg"
+                src={KshtijText}
                 alt="logo"
                 className="w-32 md:w-48"
               />
             </div>
 
             {/* Socials section */}
-            <div className="flex justify-center md:justify-start gap-5 flex-wrap">
+            <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4 md:gap-5 mt-3">
               {socials.map((item) => (
                 <Link to={item.link} key={item.id} target="_blank">
-                  <img
-                    src={item.icon}
-                    alt={item.title}
-                    width={`${item.id === 1 || item.id === 2 ? 50 : 40 && item.id === 4 || item.id === 5 ? 35 : 40} `}
-                    className={`${
-                      item.id === 2 ? "mt-4" : "mt-0"
-                    } ${
-                      item.id === 6 || item.id === 4 || item.id === 5 ? "mt-3" : "mt-2"
-                    }`}
+                  <item.icon 
+                    className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 hover:scale-110 transition-transform"
+                    size={40}
                   />
                 </Link>
               ))}

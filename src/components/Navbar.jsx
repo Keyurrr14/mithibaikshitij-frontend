@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import Kshitij from "/assets/images/KshitijWhite.webp";
@@ -16,9 +16,9 @@ function Navbar() {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -39,12 +39,24 @@ function Navbar() {
     <>
       <header className="bg-dark-1/90 font-seasons sticky top-0 z-50 text-white">
         <nav className="flex items-center justify-between w-[97%] mx-auto">
-          <div className="flex items-center">
-            <img className="h-16 sm:h-18 md:h-20" src={Kshitij} alt="Kshitij Logo" />
-            <img className="h-10 sm:h-12 md:h-18" src={KshtijText} alt="Kshitij Text" />
-          </div>
+          <NavLink to="/" onClick={handleNavLinkClick}>
+            <div className="flex items-center">
+              <img
+                className="h-16 sm:h-18 md:h-20"
+                src={Kshitij}
+                alt="Kshitij Logo"
+              />
+              <img
+                className="h-10 sm:h-12 md:h-18"
+                src={KshtijText}
+                alt="Kshitij Text"
+              />
+            </div>
+          </NavLink>
           <div
-            className={`lg:static absolute ${!isMenuOpen ? "" : "bg-dark-1/90"} lg:min-h-fit min-h-[100vh] top-0
+            className={`lg:static fixed ${
+              !isMenuOpen ? "" : "bg-dark-1/90"
+            } lg:min-h-fit min-h-[100vh] top-0
             ${isMenuOpen ? "right-0" : "right-[-100%]"}
             lg:w-auto w-full flex items-center justify-center px-5
             transition-all duration-300 ease-in
@@ -52,33 +64,59 @@ function Navbar() {
           >
             <ul className="flex lg:flex-row flex-col lg:items-center items-center lg:gap-10 gap-8 font-bold text-lg">
               <li className="relative group">
-                <NavLink to="/" className="block" onClick={handleNavLinkClick}>Home</NavLink>
+                <NavLink to="/" className="block" onClick={handleNavLinkClick}>
+                  Home
+                </NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
-                <NavLink to="/about" onClick={handleNavLinkClick}>About Us</NavLink>
+                <NavLink to="/about" onClick={handleNavLinkClick}>
+                  About Us
+                </NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
-                <NavLink to="/gallery" onClick={handleNavLinkClick}>Gallery</NavLink>
+                <NavLink to="/gallery" onClick={handleNavLinkClick}>
+                  Gallery
+                </NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group" ref={dropdownRef}>
                 <div className="cursor-pointer" onClick={toggleDropdown}>
                   Core Committee
-                  <div className={`absolute top-full left-0 bg-dark-1/90 py-2 rounded-lg z-50 ${isDropdownOpen ? 'block' : 'hidden'}`}>
-                    <NavLink to="/core-committee" className="block px-5 py-2 hover:bg-fuchsia-800 whitespace-nowrap text-md" onClick={handleNavLinkClick}>Committee</NavLink>
-                    <NavLink to="/website-team" className="block px-5 py-2 hover:bg-fuchsia-800 whitespace-nowrap text-md" onClick={handleNavLinkClick}>Website Team</NavLink>
+                  <div
+                    className={`absolute top-full left-0 bg-dark-1/90 py-2 rounded-lg z-50 ${
+                      isDropdownOpen ? "block" : "hidden"
+                    }`}
+                  >
+                    <NavLink
+                      to="/core-committee"
+                      className="block px-5 py-2 hover:bg-fuchsia-800 whitespace-nowrap text-md"
+                      onClick={handleNavLinkClick}
+                    >
+                      Committee
+                    </NavLink>
+                    <NavLink
+                      to="/website-team"
+                      className="block px-5 py-2 hover:bg-fuchsia-800 whitespace-nowrap text-md"
+                      onClick={handleNavLinkClick}
+                    >
+                      Website Team
+                    </NavLink>
                   </div>
                 </div>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
-                <NavLink to="/contact" onClick={handleNavLinkClick}>Contact Us</NavLink>
+                <NavLink to="/contact" onClick={handleNavLinkClick}>
+                  Contact Us
+                </NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
               <li className="relative group">
-                <NavLink to="/register" onClick={handleNavLinkClick}>Register</NavLink>
+                <NavLink to="/register" onClick={handleNavLinkClick}>
+                  Register
+                </NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
             </ul>
