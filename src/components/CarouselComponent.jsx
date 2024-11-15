@@ -59,17 +59,13 @@ const imagesData = [
 ];
 
 const CarouselComponent = () => {
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(0);
 
     // Update active index when slide changes
     const handleMove = (splide) => {
         const currentIndex = splide.index;
         setActiveIndex(currentIndex);
     };
-
-    const handleScale = (index) => {
-        return index === 1 || index === 4 || index === 7 || index === 10;
-    }
 
     return (
         <div className="w-full my-5 md:my-10">
@@ -106,11 +102,17 @@ const CarouselComponent = () => {
                     {imagesData.map((image, index) => (
                         <SplideSlide key={index}>
                             <div
-                                className={`${image.bg} flex flex-col justify-evenly gap-3 transition-transform duration-300`}
+                                className={`transition-transform duration-300 ease-linear ${index === activeIndex ? 'scale-100' : 'scale-90'}`}
                                 style={{
                                     height: "500px",
                                     borderRadius: "10px",
-
+                                    transformOrigin: "center",
+                                }}
+                            >
+                            <div
+                                className={`${image.bg} flex flex-col justify-evenly gap-3 h-full`}
+                                style={{
+                                    borderRadius: "10px",
                                 }}
                             >
                                 <div className="w-full flex-center">
@@ -152,6 +154,7 @@ const CarouselComponent = () => {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                         </SplideSlide>
                     ))}
