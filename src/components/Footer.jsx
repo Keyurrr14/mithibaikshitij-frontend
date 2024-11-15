@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { footerLinksRight, socials } from "../../utils/data";
+import { footerLinksRight, socials } from "@/utils/data";
 import KshtijText from "/assets/images/KshtijText.webp"
 
 const Footer = () => {

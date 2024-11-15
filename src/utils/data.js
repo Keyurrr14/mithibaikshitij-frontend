@@ -17,7 +17,7 @@ export const footerLinksRight = [{
     link: '/core-committee',
 },
 {
-    title: 'Contact us',
+    title: 'Contact Us',
     link: '/contact',
 },
 {

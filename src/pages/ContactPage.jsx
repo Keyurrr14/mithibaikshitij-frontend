@@ -1,11 +1,11 @@
-import { initializeApp } from "firebase/app";
-import { getDatabase, ref as sRef, push, set } from "firebase/database";
+
+import { ref as sRef, push, set } from "firebase/database";
 import {TextGenerateEffect} from "@/components/ui/text-generate"
 import TextField from "@/components/ui/TextField"
 import Contacts from "@/components/contacts"
 import MapComponent from "@/components/MapComponent"
 import { db } from "@/FirebaseInit"
-import bg from '/assets/images/bg.png'
+
 const ContactPage = () => {
     function getCurrentDateTime() {
         const now = new Date();
