@@ -61,7 +61,15 @@ const imagesData = [
 const CarouselComponent = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
-    // Update active index when slide changes
+    const calculateProgress = (timeString) => {
+        const [current, total] = timeString.split(' / ')
+            .map(time => {
+                const [min, sec] = time.split(':').map(Number);
+                return min * 60 + sec;
+            });
+        return (current / total * 100).toFixed(0) + '%';
+    };
+
     const handleMove = (splide) => {
         const currentIndex = splide.index;
         setActiveIndex(currentIndex);
@@ -133,11 +141,11 @@ const CarouselComponent = () => {
                                         <div className="relative flex-1 h-2 bg-white rounded-full">
                                             <div
                                                 className="absolute top-0 left-0 h-full bg-gray-400 rounded-full"
-                                                style={{ width: '60%' }}  // You can make this dynamic
+                                                style={{ width: calculateProgress(image.time) }}
                                             />
                                             <div
                                                 className="absolute w-3 h-3 md:w-4 md:h-4 bg-gray-300 rounded-full -top-[2px] md:-top-[4px]"
-                                                style={{ left: '60%', transform: 'translateX(-50%)' }}  // Align with progress
+                                                style={{ left: calculateProgress(image.time), transform: 'translateX(-50%)' }}
                                             />
                                         </div>
                                         <FaPlayCircle className="text-white w-6 h-6 md:w-8 md:h-8 flex-shrink-0" />
