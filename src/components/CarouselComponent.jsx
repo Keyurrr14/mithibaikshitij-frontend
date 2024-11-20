@@ -10,49 +10,49 @@ const imagesData = [
   {
     name: "KK",
     year: "Kshitij `21",
-    img: "/assets/images/carousel/kk.jpg",
+    img: "/assets/images/carousel/bgKK.png",
     time: "1:36 / 4:45",
     bg: 'bg-red'
   },
   {
     name: "Amit Trivedi",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/amit.jpg",
+    img: "/assets/images/carousel/bgAmit.png",
     time: "3:36 / 4:45",
     bg: 'bg-black'
   },
   {
     name: "Yellow Diary",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/yellow.jpg",
+    img: "/assets/images/carousel/bgYellow.png",
     time: "2:46 / 4:45",
     bg: 'bg-yellow-500'
   },
   {
     name: "Javed Ali",
     year: "Kshitij `22",
-    img: "/assets/images/carousel/javed.jpg",
+    img: "/assets/images/carousel/bgJaved.png",
     time: "2:14 / 3:36",
     bg: 'bg-dark-3'
   },
   {
     name: "King",
     year: "Kshitij `22",
-    img: "/assets/images/carousel/king.jpg",
+    img: "/assets/images/carousel/bgKing.png",
     time: "1:27 / 4:29",
     bg: 'bg-blue-700'
   },
   {
     name: "Sachin",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/sachin.jpg",
+    img: "/assets/images/carousel/bgJaved.png",
     time: "2:46 / 4:45",
     bg: 'bg-purple-800'
   },
   {
     name: "Sunidhi Chauhan",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/sunidhi.jpg",
+    img: "/assets/images/carousel/bgSunidhi.png",
     time: "2:46 / 4:45",
     bg: 'bg-indigo-800'
   },
@@ -119,7 +119,7 @@ const CarouselComponent = () => {
                                     <img
                                         src={image.img}
                                         alt={image.name}
-                                        className="object-cover w-44 h-44 md:w-48 md:h-48"
+                                        className="object-cover w-56 h-56 md:w-60 md:h-60"
                                     />
                                 </div>
 
