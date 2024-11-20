@@ -1,8 +1,20 @@
 import AnimatedVideo from "/assets/AnimatedVideo.mp4";
+import PhoneVideo from "/assets/PhoneVideo.mp4";
 import CarouselComponent from "@/components/CarouselComponent";
 import { useState, useEffect } from "react";
 
 function HomePage() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -34,7 +46,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-screen min-h-screen">
       <video
         autoPlay
         loop
@@ -42,11 +54,11 @@ function HomePage() {
         playsInline
         className="w-full h-screen object-cover -mt-20 md:h-auto md:max-h-screen"
       >
-        <source src={AnimatedVideo} type="video/mp4" />
+        <source src={isMobile ? PhoneVideo : AnimatedVideo} type="video/mp4" />
       </video>
       <div className="w-[90%] md:w-[80%] lg:w-[80%] max-w-[1100px] mx-auto flex flex-col items-center justify-center">
         <h1 className="font-seasons pt-14 pb-5 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white [text-shadow:_2px_4px_0px_#000000]">
-          The Arcade WareHouse
+          The Arcade Ware&#8209;House
         </h1>
 
         <p className="text-white mb-10 font-rubik text-sm sm:text-base md:text-lg lg:text-xl text-justify leading-relaxed">

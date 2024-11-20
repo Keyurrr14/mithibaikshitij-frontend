@@ -48,7 +48,7 @@ body{
     z-index: 99;
     top: 50%;
     left: -10%;
-    animation: MoveForward  8s linear infinite;
+    animation: MoveForward  4s linear infinite;
     animation-delay: 1s;
 }
 
@@ -95,10 +95,10 @@ body{
     height: 50px;
     width: 40px;
     margin-top: -25px;
-    background-color: red;
+    background-color: blue;
     border-top-left-radius: 70px;
     border-top-right-radius: 70px;
-    animation: MoveForward 8s linear infinite, FlashMe 0.8s linear infinite;
+    animation: MoveForward 4s linear infinite, FlashMe 0.8s linear infinite;
     overflow: hidden;
 }
 

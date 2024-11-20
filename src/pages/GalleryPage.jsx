@@ -31,7 +31,7 @@ function GalleryPage() {
 
         <div className="sm:rounded-2xl rounded-[5px] overflow-hidden ">
           <img
-            src="/assets/images/Gallery/3.png"
+            src="/assets/images/Gallery/4.png"
             alt="Gallery item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -41,7 +41,7 @@ function GalleryPage() {
         {/* Second row continues */}
         <div className="col-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="/assets/images/Gallery/4.png"
+            src="/assets/images/Gallery/5.png"
             alt="Wide item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -51,7 +51,7 @@ function GalleryPage() {
         {/* Third row */}
         <div className="row-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden animation-timeline">
           <img
-            src="/assets/images/Gallery/5.png"
+            src="/assets/images/Gallery/3.png"
             alt="Tall item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -186,7 +186,77 @@ function GalleryPage() {
             loading="lazy"
           />
         </div>
+        <div className="col-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden">
+          <img
+            src="/assets/images/Gallery/19.png"
+            alt="Wide item"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
 
+        <div className=" col-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden ">
+          <img
+            src="/assets/images/Gallery/22.png"
+            alt="Gallery item"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <div className="col-span-2 row-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden motion-preset-blur-down-lg">
+          <img
+            src="/assets/images/Gallery/21.png"
+            alt="Large item"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <div className="sm:rounded-2xl rounded-[5px] overflow-hidden">
+          <img
+            src="/assets/images/Gallery/20.png"
+            alt="Gallery item"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <div className="sm:rounded-2xl rounded-[5px] overflow-hidden">
+          <img
+            src="/assets/images/Gallery/23.png"
+            alt="Gallery item"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <div className="col-span-2 row-span-2 sm:rounded-2xl rounded-[5px] overflow-hidden">
+          <img
+            src="/assets/images/Gallery/13.png"
+            alt="Featured"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <div className="sm:rounded-2xl rounded-[5px] overflow-hidden " >
+          <img
+            src="/assets/images/Gallery/6.png"
+            alt="Gallery item"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        <div className="sm:rounded-2xl rounded-[5px] overflow-hidden ">
+          <img
+            src="/assets/images/Gallery/12.png"
+            alt="Gallery item"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
 
       </div>
     </div>
