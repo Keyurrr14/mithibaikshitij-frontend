@@ -10,51 +10,51 @@ const imagesData = [
   {
     name: "KK",
     year: "Kshitij `21",
-    img: "/assets/images/carousel/bgKK.png",
+    img: "/assets/images/carousel2/kk.png",
     time: "1:36 / 4:45",
-    bg: 'bg-red'
+    bg: 'bg-[#c7443a]'
   },
   {
     name: "Amit Trivedi",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/bgAmit.png",
+    img: "/assets/images/carousel2/amit.png",
     time: "3:36 / 4:45",
-    bg: 'bg-black'
+    bg: 'bg-[#141213]'
   },
   {
     name: "Yellow Diary",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/bgYellow.png",
+    img: "/assets/images/carousel2/tyd.png",
     time: "2:46 / 4:45",
-    bg: 'bg-yellow-500'
+    bg: 'bg-[#6FB8D5]'
   },
   {
     name: "Javed Ali",
     year: "Kshitij `22",
-    img: "/assets/images/carousel/bgJaved.png",
+    img: "/assets/images/carousel2/javedali.png",
     time: "2:14 / 3:36",
-    bg: 'bg-dark-3'
+    bg: 'bg-[#62A24D]'
   },
   {
     name: "King",
     year: "Kshitij `22",
-    img: "/assets/images/carousel/bgKing.png",
+    img: "/assets/images/carousel2/king.png",
     time: "1:27 / 4:29",
-    bg: 'bg-blue-700'
+    bg: 'bg-[#752253]'
   },
   {
     name: "Sachin",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/bgJaved.png",
+    img: "/assets/images/carousel2/sachin.png",
     time: "2:46 / 4:45",
-    bg: 'bg-purple-800'
+    bg: 'bg-[#1b265e]'
   },
   {
     name: "Sunidhi Chauhan",
     year: "Kshitij `23",
-    img: "/assets/images/carousel/bgSunidhi.png",
+    img: "/assets/images/carousel2/sunidhi.png",
     time: "2:46 / 4:45",
-    bg: 'bg-indigo-800'
+    bg: 'bg-[#d7cf35]'
   },
 ];
 
@@ -127,7 +127,7 @@ const CarouselComponent = () => {
                                     <img
                                         src={image.img}
                                         alt={image.name}
-                                        className="object-cover w-56 h-56 md:w-60 md:h-60"
+                                        className="object-contain w-56 h-56 md:w-72 md:h-72"
                                     />
                                 </div>
 
