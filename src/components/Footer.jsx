@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { footerLinksRight, socials } from "@/utils/data";
+import Kshitij from "/assets/images/KshitijWhite.webp";
 import KshtijText from "/assets/images/KshtijText.webp"
 
 const Footer = () => {
@@ -11,9 +12,9 @@ const Footer = () => {
         <div className="flex flex-col gap-8 w-full md:w-auto">
           <div className="flex flex-col gap-4">
             {/* Kshitij Logo and text  */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-start items-center">
+            <div className="flex flex-row justify-center items-center">
               <img
-                src="/assets/logo/logo.svg"
+                src={Kshitij}
                 alt="logo"
                 className="w-24 md:w-32"
               />
