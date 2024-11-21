@@ -58,7 +58,7 @@ function HomePage() {
       </video>
       <div className="w-[90%] md:w-[80%] lg:w-[80%] max-w-[1100px] mx-auto flex flex-col items-center justify-center">
         <h1 className="font-seasons pt-14 pb-5 text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white [text-shadow:_2px_4px_0px_#000000]">
-          The Arcade Ware&#8209;House
+          The Arcade Ware<span className="font-sans">-</span>House
         </h1>
 
         <p className="text-white mb-10 font-rubik text-sm sm:text-base md:text-lg lg:text-xl text-justify leading-relaxed">
