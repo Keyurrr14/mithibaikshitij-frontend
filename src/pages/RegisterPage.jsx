@@ -78,7 +78,7 @@ export default function MyForm() {
                 <h2 className="sm:text-6xl text-5xl font-bold text-gray-100 text-center my-8 font-lusitana [text-shadow:_2px_4px_0px_#000000]">Register</h2>
 
                 <Form {...form}>
-                    <form onSubmit={handleFormSubmit} className="sm:space-y-20 sm:mt-20">
+                <form onSubmit={handleFormSubmit} className="sm:space-y-20 sm:mt-20 flex flex-col items-center justify-center">
                         <div className="sm:flex  sm:justify-evenly gap-4">
                             <FormField
                                 control={form.control}
@@ -180,12 +180,13 @@ export default function MyForm() {
                         />
                             </div>
 
-                                                   <Button
-                            type="submit"
-                            className="border-2 hover:bg-gray-300 flex justify-self-center w-[65%] border-black dark:border-white uppercase bg-white text-black transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] font-lusitana mt-7"
-                        >
-                            Submit
-                        </Button>
+                            <Button
+                                type="submit"
+                                className="border-2 hover:bg-gray-300 flex mx-auto justify-self-center max-w-sm border-black dark:border-white uppercase bg-white text-black transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[...] font-lusitana mt-7"
+                            >
+                                Submit
+                            </Button>
+
                     </form>
                 </Form>
 
