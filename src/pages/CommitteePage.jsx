@@ -123,7 +123,7 @@ function CommitteePage() {
         <CommitteeMemberCard
           designation="Artist Relations"
           image={MayankSavankar}
-          name="Mayank Savankar"
+          name="Mayank Sawankar"
           phone="9923005261"
         />
         <CommitteeMemberCard
@@ -134,14 +134,8 @@ function CommitteePage() {
         />
         <CommitteeMemberCard
           designation="Digital Media"
-          image={PrathamMaru}
-          name="Pratham Maru"
-          phone="9820095729"
-        />
-        <CommitteeMemberCard
-          designation="Artist Relations"
           image={MokshaThakkar}
-          name="Moksha Thakkar"
+          name="Moksha Thakar"
           phone="9869633123"
         />
         <CommitteeMemberCard
@@ -171,7 +165,7 @@ function CommitteePage() {
         <CommitteeMemberCard
           designation="Creative Arts"
           image={UrjaSeth}
-          name="Urja Sheth"
+          name="Urja Seth"
           phone="9137396966"
         />
         <CommitteeMemberCard
@@ -213,13 +207,13 @@ function CommitteePage() {
         <CommitteeMemberCard
           designation="Performing Arts"
           image={IshanayaGhia}
-          name="Ishanaya Ghia"
+          name="Ishanya Ghia"
           phone="7400475387"
         />
         <CommitteeMemberCard
           designation="Photography"
           image={HardiPurohit}
-          name="Hardi Purohit"
+          name="Haardi Purohit"
           phone="9326008194"
         />
         <CommitteeMemberCard
@@ -231,7 +225,7 @@ function CommitteePage() {
         <CommitteeMemberCard
           designation="Security"
           image={AdiChedda}
-          name="Adi Chedda"
+          name="Adi Chheda"
           phone="9819975840"
         />
         <CommitteeMemberCard
@@ -255,7 +249,7 @@ function CommitteePage() {
         <CommitteeMemberCard
           designation="Branding Supplies"
           image={JainamShah}
-          name="Jainam Shah"
+          name="Jainaam Shah"
           phone="9969926444"
         />
         <CommitteeMemberCard
@@ -267,19 +261,19 @@ function CommitteePage() {
         <CommitteeMemberCard
           designation="Public Relations"
           image={PrathamChordiya}
-          name="Pratham Choradiya"
+          name="Pratham Chordiya"
           phone="8275007093"
         />
         <CommitteeMemberCard
           designation="Public Relations"
           image={PrathanaShetty}
-          name="Prathana Shetty"
+          name="Prarthana Shetty"
           phone="9769731353"
         />
         <CommitteeMemberCard
           designation="Hospitality"
           image={MuditAggarwal}
-          name="Muddit Aggarwal"
+          name="Mudit Aggarwal"
           phone="8288831787"
         />
         <CommitteeMemberCard
