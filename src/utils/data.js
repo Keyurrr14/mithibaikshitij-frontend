@@ -23,6 +23,10 @@ export const footerLinksRight = [{
 {
     title: 'Register',
     link: '/register',
+},
+{
+    title:'Linktree',
+    link:'https://linktr.ee/mithibaikshitij'
 }
 ]
 

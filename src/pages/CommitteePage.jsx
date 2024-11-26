@@ -24,7 +24,6 @@ import MuditAggarwal from "/assets/images/committee/MuditAggarwal.webp";
 import NandiniVerat from "/assets/images/committee/NandiniVerat.webp";
 import PehuMakharia from "/assets/images/committee/PehuMakharia.webp";
 import PrathamChordiya from "/assets/images/committee/PrathamChordiya.webp";
-import PrathamMaru from "/assets/images/committee/PrathamMaru.webp";
 import PrathanaShetty from "/assets/images/committee/PrathanaShetty.webp";
 import RaghavDrolia from "/assets/images/committee/RaghavDrolia.webp";
 import RajGoradia from "/assets/images/committee/RajGoradia.webp";
@@ -68,7 +67,7 @@ function CommitteePage() {
         />
       </div>
 
-      <div className="flex flex-wrap justify-center gap-20 mt-14 w-[95%] mx-auto pb-10">
+      <div className="flex flex-wrap md:flex-nowrap justify-center gap-4 md:gap-6 lg:gap-10 mt-14 w-[95%] mx-auto pb-10">
         <CommitteeMemberCard
           designation="Vice-Chairperson"
           image={GehnaTibb}

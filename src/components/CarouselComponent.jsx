@@ -91,10 +91,10 @@ const CarouselComponent = () => {
                         rewind: true,
                         gap: "1rem",
                         pagination: false,
-                        arrows: true,
+                        arrows: false,
                         extensions: { AutoScroll },
                         autoScroll: {
-                            speed: 10,
+                            speed: 3000,
                             pauseOnHover: false,
                         },
                         breakpoints: {

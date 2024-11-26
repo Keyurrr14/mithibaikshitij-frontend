@@ -53,7 +53,7 @@ function AboutPage() {
         <img src={coin} alt="Trophy" className="absolute w-24 h-24 top-[65%] right-[20%] opacity-50 -rotate-6" />
         <img src={TV} alt="Trophy" className="absolute w-16 h-16 bottom-[10%] left-[40%] opacity-50 rotate-180" />
       </div>
-      
+
       <div className="flex flex-col justify-center items-center p-4 md:p-8 lg:p-12 relative z-10">
         <div className="w-[90%] md:w-[80%] lg:w-[80%] max-w-[1100px]">
           <img
@@ -70,8 +70,8 @@ function AboutPage() {
             Economics (Autonomous) are envisaged as a destination for the most
             talented and promising students, and our courses cater to the need
             of several professions in the industry. <br />
-            <br /> NAAC Re-accredited an 'A' Grade to the college (CGPA 3.57) in
-            2016. Mithibai College was awarded Best College of the University of
+            <br /> NAAC Re-accredited an 'A++' Grade to the college (CGPA 3.55) in
+            2024. Mithibai College was awarded Best College of the University of
             Mumbai for the academic year 2016-17. The college was also awarded
             4th place (AIR under college category), 3rd place (AIR under private
             autonomous colleges), and 2nd place (State Level Maharashtra under

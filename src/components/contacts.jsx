@@ -8,6 +8,7 @@ const Contacts = () => {
                     Marketing
                 </h1>
                 <div className="text-center">
+
                     <p className="text-white font-lusitana text-base md:text-lg">
                         Apoorvi Bhatia:  &nbsp; &nbsp; +91 98260 23903
                     </p>
@@ -17,6 +18,7 @@ const Contacts = () => {
                     <p className="text-white font-lusitana text-base md:text-lg">
                         Soumya Pattanaik:  &nbsp; &nbsp; +91 88618 49596
                     </p>
+                    <a href="mailto:kshitij24marketing@gmail.com" className='text-white font-lusitana text-lg mt-4'>kshitij24marketing@gmail.com</a>
                 </div>
             </div>
 
@@ -31,6 +33,7 @@ const Contacts = () => {
                     <p className="text-white font-lusitana text-base md:text-lg">
                         Prarthana Shetty:  &nbsp; &nbsp; +91 97697 31353
                     </p>
+                    <a href="mailto:kshitijpr2024@gmail.com" className='text-white font-lusitana text-lg mt-4'>kshitijpr2024@gmail.com</a>
                 </div>
             </div>
 
@@ -45,6 +48,7 @@ const Contacts = () => {
                     <p className="text-white font-lusitana text-base md:text-lg">
                         Rudraksh Dave:  &nbsp; &nbsp; +91 97690 97906
                     </p>
+                    <a href="mailto:logistics@mithibaikshitij.com" className='text-white font-lusitana text-lg mt-4'>logistics@mithibaikshitij.com</a>
                 </div>
             </div>
         </div>

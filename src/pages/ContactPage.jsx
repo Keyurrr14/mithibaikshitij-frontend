@@ -1,4 +1,3 @@
-
 import { ref as sRef, push, set } from "firebase/database";
 import {TextGenerateEffect} from "@/components/ui/text-generate"
 import TextField from "@/components/ui/TextField"
@@ -57,20 +56,47 @@ const ContactPage = () => {
                 phoneNumber,
                 message
             });
-            
+
             alert("We will contact you soon!");
             document.getElementById("contact-form").reset();
-            
+
         } catch (error) {
             console.error("Error adding document: ", error);
             alert("An error occurred. Please try again.");
         }
     }
 
+    // Modified background images array with a repeat count for each image
+    const bgImages = [
+        { src: "/assets/images/trophy.webp", alt: "Trophy", repeat: 3 },
+        { src: "/assets/images/arcade.webp", alt: "Arcade", repeat: 3 },
+        { src: "/assets/images/bag.webp", alt: "Bag", repeat: 3 },
+        { src: "/assets/images/coin.webp", alt: "Coin", repeat: 3 },
+        { src: "/assets/images/TV.webp", alt: "TV", repeat: 3 }
+    ];
+
     return (
-        <div className={`w-full h-full flex flex-col justify-center gap-4 bg-[url('/assets/images/bg.png')] !object-cover bg-cover`}>
-            <div className='flex flex-col gap-10 justify-center items-center'>
-                
+        <div className={`w-full h-full flex flex-col justify-center gap-4 bg-[url('/assets/images/registerBg.png')] !object-cover bg-cover relative overflow-hidden`}>
+
+            {bgImages.flatMap((image, imageIndex) =>
+                Array(image.repeat).fill().map((_, repeatIndex) => (
+                    <img
+                        key={`${imageIndex}-${repeatIndex}`}
+                        src={image.src}
+                        alt={image.alt}
+                        className="absolute w-16 h-16 object-contain opacity-30 pointer-events-none"
+                        style={{
+                            top: `${Math.random() * 100}%`,
+                            left: `${Math.random() * 100}%`,
+                            transform: `rotate(${Math.random() * 360}deg)`,
+                            zIndex: 0
+                        }}
+                    />
+                ))
+            )}
+
+            
+            <div className='flex flex-col gap-10 justify-center items-center relative z-10'>
                 <div className='flex flex-1 w-full h-full items-center justify-evenly mt-16 motion-preset-fade-md '>
                     <img
                         src="/assets/images/artists/someSinger.png"
