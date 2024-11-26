@@ -1,7 +1,7 @@
 import React from "react";
 import Pacman from "../components/Pacman";
 import Kshitij from "/assets/images/Kshitij.webp";
-import KshitijText from "/assets/images/KshtijText.webp";
+import KshitijText from "/assets/images/KshitijText.webp";
 import MithibaiCollege from "/assets/images/MithibaiCollege.webp";
 import trophy from "/assets/images/trophy.webp";
 import arcade from "/assets/images/arcade.webp";
@@ -106,8 +106,8 @@ function AboutPage() {
             history. We have a committee of over 700 students who diligently
             work towards adding zest to this extravagant festival making it one
             of the biggest festivals in Asia.
-            <br />
-            <br /> The list of events this year sums up to a total of 45+ events
+            <br/>
+            <br/> The list of events this year sums up to a total of 45+ events
             over eight departments, providing a prodigious platform for all
             students nationwide. We are also the first-ever college festival to
             have introduced Para Events, where we host several events for the
@@ -117,8 +117,8 @@ function AboutPage() {
             have also been hosting 'The Kshitij Show'- the official talk show
             where influential artists let us peep into their lives behind the
             stardom.
-            <br />
-            <br /> With A-lister Pronite artists like Sunidhi Chauhan,
+            <br/>
+            <br/> With A-lister Pronite artists like Sunidhi Chauhan,
             Vishal-Shekhar, Farhan Akhtar, Mohit Chauhan, and King in the past
             years, Kshitij`23  aims to be much bigger and better, exceeding all
             expectations. Furthermore, participants also get cash prizes worth
