@@ -215,7 +215,7 @@ function GalleryPage() {
 
         <div className="sm:rounded-2xl rounded-[5px] overflow-hidden">
           <img
-            src="/assets/images/Gallery/20.png"
+            src="/assets/images/Gallery/24.png"
             alt="Gallery item"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -251,12 +251,29 @@ function GalleryPage() {
 
         <div className="sm:rounded-2xl rounded-[5px] overflow-hidden ">
           <img
-            src="/assets/images/Gallery/12.png"
+            src="/assets/images/Gallery/25.JPG"
             alt="Gallery item"
             className="w-full h-full object-cover"
             loading="lazy"
           />
         </div>
+        <div className="sm:rounded-2xl col-span-2 rounded-[5px] overflow-hidden ">
+          <img
+            src="/assets/images/Gallery/26.JPG"
+            alt="Gallery item"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="sm:rounded-2xl col-span-2 rounded-[5px] overflow-hidden ">
+          <img
+            src="/assets/images/Gallery/20.png"
+            alt="Gallery item"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+
 
       </div>
     </div>
