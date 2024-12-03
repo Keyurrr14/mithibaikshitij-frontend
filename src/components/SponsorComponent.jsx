@@ -17,25 +17,43 @@ const sponsors = [
     src: "/assets/images/sponsors/5.png",
   },
   {
-    src: "/assets/images/sponsors/6.png",
+    src: "/assets/images/sponsors/6.jpg",
   },
   {
     src: "/assets/images/sponsors/7.png",
   },
   {
-    src: "/assets/images/sponsors/8.jpg",
+    src: "/assets/images/sponsors/8.png",
   },
   {
     src: "/assets/images/sponsors/9.jpg",
   },
   {
-    src: "/assets/images/sponsors/10.PNG",
+    src: "/assets/images/sponsors/10.png",
   },
   {
     src: "/assets/images/sponsors/11.png",
   },
   {
     src: "/assets/images/sponsors/12.png",
+  },
+  {
+    src: "/assets/images/sponsors/13.png",
+  },
+  {
+    src: "/assets/images/sponsors/14.png",
+  },
+  {
+    src: "/assets/images/sponsors/15.png",
+  },
+  {
+    src: "/assets/images/sponsors/16.png",
+  },
+  {
+    src: "/assets/images/sponsors/17.png",
+  },
+  {
+    src: "/assets/images/sponsors/18.png",
   },
 ];
 
