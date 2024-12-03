@@ -22,7 +22,7 @@ const imagesData = [
     bg: 'bg-[#141213]'
   },
   {
-    name: "Yellow Diary",
+    name: "The Yellow Diary",
     year: "Kshitij `23",
     img: "/assets/images/carousel2/tyd.png",
     time: "2:46 / 4:45",
@@ -43,7 +43,7 @@ const imagesData = [
     bg: 'bg-[#752253]'
   },
   {
-    name: "Sachin",
+    name: "Sachin Jigar",
     year: "Kshitij `23",
     img: "/assets/images/carousel2/sachin.png",
     time: "2:46 / 4:45",
@@ -123,11 +123,11 @@ const CarouselComponent = () => {
                                     borderRadius: "10px",
                                 }}
                             >
-                                <div className="w-full flex-center">
+                                <div className="w-full flex-center !px-0">
                                     <img
                                         src={image.img}
                                         alt={image.name}
-                                        className="object-contain w-56 h-56 md:w-72 md:h-72"
+                                        className="object-cover w-56 h-56 md:w-72 md:h-72 !px-0"
                                     />
                                 </div>
 

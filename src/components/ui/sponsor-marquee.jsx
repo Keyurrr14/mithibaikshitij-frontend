@@ -69,7 +69,7 @@ export const SponsorMarquee = ({
         )}>
         {items.map((item, idx) => (
           <li
-            className="max-w-full relative rounded-2xl flex-center p-10 h-[150px] md:w-[300px]"
+            className="max-w-full relative rounded-2xl flex-center p-10 h-[120px] md:w-[300px]"
             style={{
               background:
                 // "#3d1e77",
@@ -79,7 +79,7 @@ export const SponsorMarquee = ({
             <div>
                 <img
                     src={item.src}
-                    className="h-28 w-48 object-cover rounded-md"
+                    className="h-28 w-48 object-contain rounded-md"
                 />
             </div>
           </li>

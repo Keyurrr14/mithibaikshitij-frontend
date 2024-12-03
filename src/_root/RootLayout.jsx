@@ -14,7 +14,7 @@ const RootLayout = () => {
     <div className="w-full">
       <Navbar/>
       <section className="flex flex-1 h-full bg-[url('/assets/images/bg.png')] !object-cover bg-cover">
-        <Outlet />
+         <Outlet />
       </section>
 
       <Footer />

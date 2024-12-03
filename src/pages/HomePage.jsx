@@ -1,3 +1,4 @@
+import SponsorComponent from "@/components/SponsorComponent";
 import AnimatedVideo from "/assets/AnimatedVideo.mp4";
 import PhoneVideo from "/assets/PhoneVideo.mp4";
 import CarouselComponent from "@/components/CarouselComponent";
@@ -126,6 +127,7 @@ function HomePage() {
             <span className="text-xs sm:text-sm text-white/80">Seconds</span>
           </div>
         </div>
+        <SponsorComponent />
         <CarouselComponent/>
       </div>
     </div>

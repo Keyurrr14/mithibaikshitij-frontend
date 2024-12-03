@@ -26,7 +26,7 @@ export const footerLinksRight = [{
 },
 {
     title:'Linktree',
-    link:'https://linktr.ee/mithibaikshitij'
+    link:'https://linktr.ee/Mithibaikshitij24'
 }
 ]
 
