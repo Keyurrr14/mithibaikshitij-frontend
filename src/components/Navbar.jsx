@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import Kshitij from "/assets/images/KshitijWhite.webp";
-import KshtijText from "/assets/images/KshtijText.webp";
+import KshitijText from "/assets/images/KshitijText.webp";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,7 +48,7 @@ function Navbar() {
               />
               <img
                 className="h-10 sm:h-12 md:h-18"
-                src={KshtijText}
+                src={KshitijText}
                 alt="Kshitij Text"
               />
             </div>

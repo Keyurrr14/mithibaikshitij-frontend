@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { footerLinksRight, socials } from "@/utils/data";
 import Kshitij from "/assets/images/KshitijWhite.webp";
-import KshtijText from "/assets/images/KshtijText.webp"
+import KshitijText from "/assets/images/KshitijText.webp"
 
 const Footer = () => {
   return (
@@ -20,7 +20,7 @@ const Footer = () => {
               />
 
               <img
-                src={KshtijText}
+                src={KshitijText}
                 alt="logo"
                 className="w-32 md:w-48"
               />
