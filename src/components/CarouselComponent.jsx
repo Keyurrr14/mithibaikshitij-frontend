@@ -51,7 +51,7 @@ const imagesData = [
   },
   {
     name: "Sunidhi Chauhan",
-    year: "Kshitij `23",
+    year: "Kshitij `22",
     img: "/assets/images/carousel2/sunidhi.png",
     time: "2:46 / 4:45",
     bg: 'bg-[#d7cf35]'
