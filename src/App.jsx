@@ -9,6 +9,7 @@ import WebsiteTeamPage from './pages/WebsiteTeamPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
 import HomePage from './pages/HomePage.jsx';
+import VerificationPage from './pages/VerificationPage';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/website-team' element={<WebsiteTeamPage />} />
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/register' element={<RegisterPage />} />
+          <Route path='/verification' element={<VerificationPage />} />
         </Route>
       </Routes>
     </main>

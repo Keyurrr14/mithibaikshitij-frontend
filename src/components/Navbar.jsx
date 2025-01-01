@@ -119,6 +119,12 @@ function Navbar() {
                 </NavLink>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </li>
+              <li className="relative group">
+                <NavLink to="/verification" onClick={handleNavLinkClick}>
+                  Verification
+                </NavLink>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+              </li>
             </ul>
           </div>
           <div className="lg:hidden flex items-center justify-end">
